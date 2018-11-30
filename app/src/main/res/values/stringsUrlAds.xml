@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="anhQuangCao1">https://laz-img-cdn.alicdn.com/images/ims-web/TB1279fsHvpK1RjSZFqXXcXUVXa.jpg_1200x1200Q100.jpg_.webp</string>
+    <string name="anhQuangCao2">https://laz-img-cdn.alicdn.com/images/ims-web/TB1haF_sRLoK1RjSZFuXXXn0XXa.jpg_1200x1200Q100.jpg_.webp</string>
+    <string name="anhQuangCao3">https://laz-img-cdn.alicdn.com/images/ims-web/TB1qLWmsNYaK1RjSZFnXXa80pXa.jpg_1200x1200.jpg</string>
+    <string name="anhQuangCao4">https://media3.scdn.vn/img2/2018/11_28/RbkT3k.jpg</string>
+    <string name="anhQuangCao5">https://media3.scdn.vn/img2/2018/11_23/iaHaKZ.png</string>
+</resources>
