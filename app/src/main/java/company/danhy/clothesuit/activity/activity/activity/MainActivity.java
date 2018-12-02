@@ -1,4 +1,4 @@
-package company.danhy.clothesuit.activity;
+package company.danhy.clothesuit.activity.activity.activity;
 
 import android.annotation.SuppressLint;
 import android.support.design.widget.NavigationView;
@@ -26,6 +26,8 @@ import com.squareup.picasso.PicassoProvider;
 import java.util.ArrayList;
 
 import company.danhy.clothesuit.R;
+import company.danhy.clothesuit.activity.activity.adapter.LoaispAdapter;
+import company.danhy.clothesuit.activity.activity.model.Loaisp;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     ListView listViewManHinhChinh;
     ImageView imageViewHotItems;
     DrawerLayout drawerLayout;
+    ArrayList <Loaisp> mangloaisanpham;
+    LoaispAdapter loaispAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         AnhXa();
         ActionBar();
         ActionViewFlipper();
+
 
     }
 
@@ -143,5 +148,9 @@ public class MainActivity extends AppCompatActivity {
         listViewManHinhChinh = findViewById(R.id.listViewManHinhChinh);
         imageViewHotItems = findViewById(R.id.imageViewHotItems);
         drawerLayout = findViewById(R.id.drawerLayout);
+        mangloaisanpham =new ArrayList<>();
+        loaispAdapter=new LoaispAdapter(mangloaisanpham,getApplicationContext());
+        listViewManHinhChinh.setAdapter(loaispAdapter);
+
     }
 }
