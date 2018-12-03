@@ -28,7 +28,7 @@
           android:layout_margin="5dp"
           android:text="Loại sản phẩm"
           android:textColor="#f20"
-          android:textSize="25sp" />
+          android:textSize="20sp" />
   </LinearLayout>
 
 

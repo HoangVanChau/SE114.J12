@@ -2,12 +2,12 @@ package company.danhy.clothesuit.activity.activity.model;
 
 public class Loaisp {
     public int Id;
-    public String tenLoaisp;
+    public String tenLoaiSanPham;
     public String hinhAnhLoaiSanPham;
 
     public Loaisp(int id, String tenLoaisp, String hinhAnhLoaiSanPham) {
         Id = id;
-        this.tenLoaisp = tenLoaisp;
+        this.tenLoaiSanPham = tenLoaiSanPham;
         this.hinhAnhLoaiSanPham = hinhAnhLoaiSanPham;
     }
 
@@ -20,11 +20,11 @@ public class Loaisp {
     }
 
     public String getTenLoaisp() {
-        return tenLoaisp;
+        return tenLoaiSanPham;
     }
 
     public void setTenLoaisp(String tenLoaisp) {
-        this.tenLoaisp = tenLoaisp;
+        this.tenLoaiSanPham = tenLoaiSanPham;
     }
 
     public String getHinhAnhLoaiSanPham() {
