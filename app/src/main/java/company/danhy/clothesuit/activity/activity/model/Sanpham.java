@@ -1,4 +1,4 @@
-package company.danhy.clothesuit.activity.activity.ultil;
+package company.danhy.clothesuit.activity.activity.model;
 
 public class Sanpham {
     public int ID;

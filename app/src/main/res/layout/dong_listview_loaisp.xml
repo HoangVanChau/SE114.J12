@@ -11,18 +11,18 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content">
       <ImageView
-          android:id="@+id/imageloaisp"
+          android:id="@+id/imageLoaisp"
           android:src="@mipmap/ic_launcher"
           android:layout_margin="5dp"
           android:layout_width="70dp"
           android:layout_height="70dp" />
     </LinearLayout>
-  <LinearLayout
+    <LinearLayout
       android:layout_weight="7"
       android:layout_width="0dp"
       android:layout_height="wrap_content">
       <TextView
-          android:id="@+id/textviewloaisp"
+          android:id="@+id/textviewLoaisp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_margin="5dp"

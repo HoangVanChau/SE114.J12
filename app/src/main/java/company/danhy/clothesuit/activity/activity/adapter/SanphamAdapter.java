@@ -10,13 +10,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.PicassoProvider;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import company.danhy.clothesuit.R;
-import company.danhy.clothesuit.activity.activity.ultil.Sanpham;
+import company.danhy.clothesuit.activity.activity.model.Sanpham;
 
 public class SanphamAdapter extends RecyclerView.Adapter<SanphamAdapter.ITemHolder> {
     Context context;

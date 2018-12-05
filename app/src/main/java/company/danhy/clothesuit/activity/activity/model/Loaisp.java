@@ -1,37 +1,37 @@
 package company.danhy.clothesuit.activity.activity.model;
 
 public class Loaisp {
-    public int Id;
-    public String tenLoaiSanPham;
-    public String hinhAnhLoaiSanPham;
+    public int ID;
+    public String Tenloaisanpham;
+    public String Hinhanhloaisanpham;
 
-    public Loaisp(int id, String tenLoaisp, String hinhAnhLoaiSanPham) {
-        Id = id;
-        this.tenLoaiSanPham = tenLoaiSanPham;
-        this.hinhAnhLoaiSanPham = hinhAnhLoaiSanPham;
+    public Loaisp(int ID, String tenloaisanpham, String hinhanhloaisanpham) {
+        this.ID = ID;
+        Tenloaisanpham = tenloaisanpham;
+        Hinhanhloaisanpham = hinhanhloaisanpham;
     }
 
-    public int getId() {
-        return Id;
+    public int getID() {
+        return ID;
     }
 
-    public void setId(int id) {
-        Id = id;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
-    public String getTenLoaisp() {
-        return tenLoaiSanPham;
+    public String getTenloaisanpham() {
+        return Tenloaisanpham;
     }
 
-    public void setTenLoaisp(String tenLoaisp) {
-        this.tenLoaiSanPham = tenLoaiSanPham;
+    public void setTenloaisanpham(String tenloaisanpham) {
+        Tenloaisanpham = tenloaisanpham;
     }
 
-    public String getHinhAnhLoaiSanPham() {
-        return hinhAnhLoaiSanPham;
+    public String getHinhanhloaisanpham() {
+        return Hinhanhloaisanpham;
     }
 
-    public void setHinhAnhLoaiSanPham(String hinhAnhLoaiSanPham) {
-        this.hinhAnhLoaiSanPham = hinhAnhLoaiSanPham;
+    public void setHinhanhloaisanpham(String hinhanhloaisanpham) {
+        Hinhanhloaisanpham = hinhanhloaisanpham;
     }
 }

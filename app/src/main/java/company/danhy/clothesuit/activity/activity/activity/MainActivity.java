@@ -6,6 +6,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -33,8 +34,10 @@ import java.util.ArrayList;
 
 import company.danhy.clothesuit.R;
 import company.danhy.clothesuit.activity.activity.adapter.LoaispAdapter;
+import company.danhy.clothesuit.activity.activity.adapter.SanphamAdapter;
 import company.danhy.clothesuit.activity.activity.model.Loaisp;
-import company.danhy.clothesuit.activity.activity.ultil.CheckConnect;
+import company.danhy.clothesuit.activity.activity.ultil.checkconnect;
+import company.danhy.clothesuit.activity.activity.model.Sanpham;
 import company.danhy.clothesuit.activity.activity.ultil.Server;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,25 +51,67 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     ArrayList <Loaisp> mangloaisanpham;
     LoaispAdapter loaispAdapter;
-    int id=0;
-    String tenloaisp="";
-    String hinhanhloaisp="";
+    int ID=0;
+    String tenloaisanpham="";
+    String hinhanhloaisanpham="";
+
+    ArrayList<Sanpham> mangsanpham;
+    SanphamAdapter sanphamAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         AnhXa();
-        if(CheckConnect.haveNetworkConnection(getApplicationContext())){
+        if(checkconnect.isNetworkAvailable(getApplicationContext())){
             ActionBar();
             ActionViewFlipper();
             getDuLieuLoaiSanPham();
+            getDuLieuSPMoiNhat();
         }else{
-            CheckConnect.ShowToast_Short(getApplicationContext(),"Vui lòng kiểm tra lại kết nối của bạn");
+            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối ");
             finish();
         }
 
 
+    }
+
+    private void getDuLieuSPMoiNhat() {
+        RequestQueue requestQueue =Volley.newRequestQueue(getApplicationContext());
+        JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Server.duongDanSanPhamMoiNhat, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                if (response != null) {
+                    int ID = 0;
+                    String Tensanpham = "";
+                    Integer Giasanpham = 0;
+                    String Hinhanhsanpham = "";
+                    String Motasanpham = "";
+                    int IDsanpham = 0;
+                    for(int i=0;i<response.length();i++){
+                        try {
+                            JSONObject jsonObject  =response.getJSONObject(i);
+                            ID=jsonObject.getInt("id");
+                            Tensanpham=jsonObject.getString("tensp");
+                           Giasanpham=jsonObject.getInt("giasp");
+                           Hinhanhsanpham=jsonObject.getString("hinhanhsp");
+                           Motasanpham=jsonObject.getString("motasp");
+                           IDsanpham=jsonObject.getInt("idsanpham");
+                           mangsanpham.add(new Sanpham(ID,Tensanpham,Giasanpham,Hinhanhsanpham,Motasanpham,IDsanpham));
+                           sanphamAdapter.notifyDataSetChanged();
+                        }  catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(jsonArrayRequest);
     }
 
     private void getDuLieuLoaiSanPham() {
@@ -76,13 +121,14 @@ public class MainActivity extends AppCompatActivity {
 
             public void onResponse(JSONArray response) {
                if(response != null){
+
                  for(int i = 0;i < response.length();i++){
                      try {
                          JSONObject jsonObject =response.getJSONObject(i);
-                         id =jsonObject.getInt("id");
-                         tenloaisp=jsonObject.getString("tenLoaiSanPham");
-                         hinhanhloaisp =jsonObject.getString("hinhAnhLoaiSanPham");
-                         mangloaisanpham.add(new Loaisp(id,tenloaisp,hinhanhloaisp));
+                         ID =jsonObject.getInt("id");
+                         tenloaisanpham=jsonObject.getString("tenloaisp");
+                         hinhanhloaisanpham =jsonObject.getString("hinhanhloaisp");
+                         mangloaisanpham.add(new Loaisp(ID,tenloaisanpham,hinhanhloaisanpham));
                          loaispAdapter.notifyDataSetChanged();
                      } catch (JSONException e) {
                          e.printStackTrace();
@@ -95,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                CheckConnect.ShowToast_Short(getApplicationContext(),error.toString());
+                checkconnect.ShowToast_Short(getApplicationContext(),error.toString());
             }
         });
         requestQueue.add(jsonArrayRequest);
@@ -198,11 +244,17 @@ public class MainActivity extends AppCompatActivity {
         listViewManHinhChinh = findViewById(R.id.listViewManHinhChinh);
         imageViewHotItems = findViewById(R.id.imageViewHotItems);
         drawerLayout = findViewById(R.id.drawerLayout);
-        mangloaisanpham =new ArrayList<>();
 
+        mangloaisanpham =new ArrayList<>();
         mangloaisanpham.add(0,new Loaisp(0,"Trang Chính","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyyPFbxER9CaziwnRh9UgBFqauaA2DOR_ZTCXFkK9iLmFdeoPE5w"));
         loaispAdapter=new LoaispAdapter(mangloaisanpham,getApplicationContext());
         listViewManHinhChinh.setAdapter(loaispAdapter);
+
+        mangsanpham=new ArrayList<>();
+        sanphamAdapter =new SanphamAdapter(getApplicationContext(),mangsanpham);
+        recyclerViewNewItems.setHasFixedSize(true);
+        recyclerViewNewItems.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        recyclerViewNewItems.setAdapter(sanphamAdapter);
 
     }
 }

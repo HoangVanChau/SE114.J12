@@ -41,6 +41,7 @@ public class LoaispAdapter extends BaseAdapter
     public long getItemId(int position) {
         return position;
     }
+
     public class ViewHolder{
      TextView txttenLoaiSanPham;
      ImageView imgLoaiSp;
@@ -48,23 +49,23 @@ public class LoaispAdapter extends BaseAdapter
 
     @Override
     public View getView(int position, View view, ViewGroup parent) {
-        ViewHolder viewHolder=null;
+        ViewHolder viewHolder = null;
         if(view==null){
             viewHolder=new ViewHolder();
             LayoutInflater inflater= (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
             view =inflater.inflate(R.layout.dong_listview_loaisp,null);
-            viewHolder.txttenLoaiSanPham=view.findViewById(R.id.textviewloaisp);
-            viewHolder.imgLoaiSp=view.findViewById(R.id.imageloaisp);
+            viewHolder.txttenLoaiSanPham=view.findViewById(R.id.textviewLoaisp);
+            viewHolder.imgLoaiSp=view.findViewById(R.id.imageLoaisp);
             view.setTag(viewHolder);
         }else{
             viewHolder= (ViewHolder) view.getTag();
-            Loaisp loaisp= (Loaisp) getItem(position);
-            viewHolder.txttenLoaiSanPham.setText(loaisp.getTenLoaisp());
-            Picasso.get().load(loaisp.getHinhAnhLoaiSanPham())
-                    .placeholder(R.drawable.noimage)
-                    .error(R.drawable.error)
-                    .into(viewHolder.imgLoaiSp);
         }
+        Loaisp loaisp= (Loaisp) getItem(position);
+        viewHolder.txttenLoaiSanPham.setText(loaisp.getTenloaisanpham());
+        Picasso.get().load(loaisp.getHinhanhloaisanpham())
+                .placeholder(R.drawable.noimage)
+                .error(R.drawable.error)
+                .into(viewHolder.imgLoaiSp);
         return view;
     }
 }
