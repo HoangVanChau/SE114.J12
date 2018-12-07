@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="company.danhy.clothesuit">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -18,6 +19,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.activity.activity.GiayActivity" />
+        <activity android:name=".activity.activity.activity.NonActivity" />
+        <activity android:name=".activity.activity.activity.AoActivity" />
+        <activity android:name=".activity.activity.activity.QuanActivity" />
+        <activity android:name=".activity.activity.activity.DepActivity" />
+        <activity android:name=".activity.activity.activity.ThongTinActivity" />
+        <activity android:name=".activity.activity.activity.LienHeActivity"></activity>
     </application>
 
 </manifest>

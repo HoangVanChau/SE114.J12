@@ -1,6 +1,7 @@
 package company.danhy.clothesuit.activity.activity.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -10,10 +11,12 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ViewFlipper;
@@ -68,12 +71,100 @@ public class MainActivity extends AppCompatActivity {
             ActionViewFlipper();
             getDuLieuLoaiSanPham();
             getDuLieuSPMoiNhat();
+            catOnItemListView();
         }else{
             checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối ");
             finish();
         }
 
 
+    }
+
+    private void catOnItemListView() {
+        listViewManHinhChinh.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                        if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                            Intent intent =new Intent(MainActivity.this,MainActivity.class);
+                            startActivity(intent);
+                        }else{
+                            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                        }
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                     case 1:
+                         if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                             Intent intent =new Intent(MainActivity.this,GiayActivity.class);
+                             intent.putExtra("idloaisanpham",mangloaisanpham.get(position).getID());
+                             startActivity(intent);
+                         }else{
+                             checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                         }
+                         drawerLayout.closeDrawer(Gravity.START);
+                         break;
+                    case 2:
+                        if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                            Intent intent =new Intent(MainActivity.this,NonActivity.class);
+                            intent.putExtra("idloaisanpham",mangloaisanpham.get(position).getID());
+                            startActivity(intent);
+                        }else{
+                            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                        }
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                    case 3:
+                        if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                            Intent intent =new Intent(MainActivity.this,AoActivity.class);
+                            intent.putExtra("idloaisanpham",mangloaisanpham.get(position).getID());
+                            startActivity(intent);
+                        }else{
+                            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                        }
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                    case 4:
+                        if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                            Intent intent =new Intent(MainActivity.this,QuanActivity.class);
+                            intent.putExtra("idloaisanpham",mangloaisanpham.get(position).getID());
+                            startActivity(intent);
+                        }else{
+                            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                        }
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                    case 5:
+                        if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                            Intent intent =new Intent(MainActivity.this,DepActivity.class);
+                            intent.putExtra("idloaisanpham",mangloaisanpham.get(position).getID());
+                            startActivity(intent);
+                        }else{
+                            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                        }
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                    case 6:
+                        if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                            Intent intent =new Intent(MainActivity.this,ThongTinActivity.class);
+                            startActivity(intent);
+                        }else{
+                            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                        }
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                    case 7:
+                        if(checkconnect.isNetworkAvailable(getApplicationContext())){
+                            Intent intent =new Intent(MainActivity.this,ThongTinActivity.class);
+                            startActivity(intent);
+                        }else{
+                            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");
+                        }
+                        drawerLayout.closeDrawer(Gravity.START);
+                        break;
+                }
+            }
+        });
     }
 
     private void getDuLieuSPMoiNhat() {
