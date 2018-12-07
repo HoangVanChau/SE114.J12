@@ -162,6 +162,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         drawerLayout.closeDrawer(Gravity.START);
                         break;
+
                 }
             }
         });
