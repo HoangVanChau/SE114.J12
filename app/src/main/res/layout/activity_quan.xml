@@ -6,19 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.activity.activity.QuanActivity">
-    <Toolbar
+    <android.support.v7.widget.Toolbar
         android:titleTextColor="#5b440a"
         android:background="#c9aeaa"
         android:title="Quần"
         android:id="@+id/toolbarquan"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
-        <ListView
-            android:id="@+id/listviewquan"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </ListView>
-    </Toolbar>
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/listviewquan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
 
 </LinearLayout>

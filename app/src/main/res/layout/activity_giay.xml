@@ -6,19 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activity.activity.activity.GiayActivity">
-    <Toolbar
-        android:titleTextColor="#5b440a"
+    <android.support.v7.widget.Toolbar
+        android:titleTextColor="#f20"
         android:background="#c9aeaa"
         android:title="Giày"
         android:id="@+id/toolbargiay"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
-     <ListView
-         android:id="@+id/listviewgiay"
-         android:layout_width="match_parent"
-         android:layout_height="match_parent">
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/listviewgiay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-     </ListView>
-    </Toolbar>
+    </ListView>
 
 </LinearLayout>

@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                      case 1:
                          if(checkconnect.isNetworkAvailable(getApplicationContext())){
                              Intent intent =new Intent(MainActivity.this,GiayActivity.class);
-                             intent.putExtra("idloaisanpham",mangloaisanpham.get(position).getID());
+                             intent.putExtra("idLoaiSanPham",mangloaisanpham.get(position).getID());
                              startActivity(intent);
                          }else{
                              checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối!");

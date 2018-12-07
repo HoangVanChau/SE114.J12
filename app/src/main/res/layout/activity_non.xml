@@ -6,20 +6,19 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".activity.activity.activity.NonActivity">
-    <Toolbar
+    <Tandroid.support.v7.widget.Toolbar
         android:titleTextColor="#f20"
         android:background="#c9aeaa"
         android:title="Nón"
         android:id="@+id/toolbarnon"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
-        <ListView
-            android:id="@+id/listviewnon"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        </ListView>
-    </Toolbar>
+    </Tandroid.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/listviewnon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
 
 
 </LinearLayout>
