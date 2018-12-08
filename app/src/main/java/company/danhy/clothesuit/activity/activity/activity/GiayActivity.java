@@ -1,10 +1,16 @@
 package company.danhy.clothesuit.activity.activity.activity;
 
+import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AbsListView;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.support.v7.widget.Toolbar;
 
@@ -39,7 +45,10 @@ public class GiayActivity extends AppCompatActivity {
       ArrayList<Sanpham> manggiay;
       int idgiay=0;
       int page=1;
-
+      View footerview;
+      boolean limitdata=false;
+       boolean Loading=false;
+       mHandler mHandler;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,12 +58,40 @@ public class GiayActivity extends AppCompatActivity {
             GetIdloaisp();
             ActionToolbar();
             getData(page);
+            LoadMoreData();
+
         }
         else{
             checkconnect.ShowToast_Short(getApplicationContext(),"Bạn vui lòng kiểm tra lại Internet");
             finish();
         }
 
+    }
+
+    private void LoadMoreData() {
+        lvgiay.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(getApplicationContext(),ChiTietSanPham.class);
+                intent.putExtra("thongtinsanpham",manggiay.get(position));
+                startActivity(intent);
+            }
+        });
+        lvgiay.setOnScrollListener(new AbsListView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(AbsListView view, int scrollState) {
+
+            }
+
+            @Override
+            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+             if(firstVisibleItem+visibleItemCount==totalItemCount &&totalItemCount!=0 && Loading ==false && limitdata ==false){
+               Loading=true;
+               ThreadData threadData=new ThreadData();
+               threadData.start();
+             }
+            }
+        });
     }
 
     private void getData(int Page) {
@@ -70,6 +107,7 @@ public class GiayActivity extends AppCompatActivity {
                String motagiay="";
                int idspgiay=0;
                if(response!=null && response.length()!=2){
+                   lvgiay.removeFooterView(footerview);
                    try {
                        JSONArray jsonArray =new JSONArray(response);
                        for(int i=0;i<jsonArray.length();i++){
@@ -86,6 +124,10 @@ public class GiayActivity extends AppCompatActivity {
                    } catch (JSONException e) {
                        e.printStackTrace();
                    }
+               }else{
+                   limitdata=true;
+                   lvgiay.removeFooterView(footerview);
+                   checkconnect.ShowToast_Short(getApplicationContext(),"Đã hết dữ liệu");
                }
             }
         }, new Response.ErrorListener() {
@@ -130,5 +172,37 @@ public class GiayActivity extends AppCompatActivity {
       manggiay=new ArrayList<>();
       giayAdapter=new GiayAdapter(getApplicationContext(),manggiay);
       lvgiay.setAdapter(giayAdapter);
+        LayoutInflater inflater = (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
+        footerview =inflater.inflate(R.layout.projectbar,null);
+        mHandler=new mHandler();
+    }
+    public class mHandler extends Handler{
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what){
+                case 0:
+                    lvgiay.addFooterView(footerview);
+                    break;
+                case 1:
+                    getData(++page);
+                    Loading=false;
+                    break;
+            }
+            super.handleMessage(msg);
+        }
+    }
+    public class ThreadData extends Thread{
+        @Override
+        public void run() {
+            mHandler.sendEmptyMessage(0);
+            try {
+                Thread.sleep(3000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Message message=mHandler.obtainMessage(1);
+            mHandler.sendMessage(message);
+            super.run();
+        }
     }
 }

@@ -25,7 +25,8 @@
         <activity android:name=".activity.activity.activity.QuanActivity" />
         <activity android:name=".activity.activity.activity.DepActivity" />
         <activity android:name=".activity.activity.activity.ThongTinActivity" />
-        <activity android:name=".activity.activity.activity.LienHeActivity"></activity>
+        <activity android:name=".activity.activity.activity.LienHeActivity" />
+        <activity android:name=".activity.activity.activity.ChiTietSanPham"></activity>
     </application>
 
 </manifest>
