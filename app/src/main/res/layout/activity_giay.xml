@@ -7,9 +7,9 @@
     android:orientation="vertical"
     tools:context=".activity.activity.activity.GiayActivity">
     <android.support.v7.widget.Toolbar
-        android:titleTextColor="#f20"
+        app:titleTextColor="#ff00e1"
         android:background="#c9aeaa"
-        android:title="Giày"
+        app:title="Giày"
         android:id="@+id/toolbargiay"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">

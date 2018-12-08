@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     tools:context=".activity.activity.activity.DepActivity">
     <android.support.v7.widget.Toolbar
-        android:titleTextColor="#5b440a"
         android:background="#c9aeaa"
-        android:title="Dép"
+        app:titleTextColor="#fc3605"
+        app:title="Dép"
         android:id="@+id/toolbardep"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">

@@ -14,7 +14,7 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonArrayRequest;
+
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
@@ -44,8 +44,8 @@ public class GiayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_giay);
-        anhxa();
         if(checkconnect.isNetworkAvailable(getApplicationContext())){
+            anhxa();
             GetIdloaisp();
             ActionToolbar();
             getData(page);
@@ -69,7 +69,7 @@ public class GiayActivity extends AppCompatActivity {
                String hinhanhgiay="";
                String motagiay="";
                int idspgiay=0;
-               if(response!=null){
+               if(response!=null && response.length()!=2){
                    try {
                        JSONArray jsonArray =new JSONArray(response);
                        for(int i=0;i<jsonArray.length();i++){
@@ -108,6 +108,7 @@ public class GiayActivity extends AppCompatActivity {
 
        setSupportActionBar(tbgiay);
        ActionBar actionBar=getSupportActionBar();
+        assert actionBar != null;
         actionBar.setDisplayHomeAsUpEnabled(true);
         tbgiay.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

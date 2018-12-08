@@ -1,10 +1,9 @@
 package company.danhy.clothesuit.activity.activity.activity;
 
+import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.ListView;
 
@@ -25,28 +24,24 @@ import java.util.HashMap;
 import java.util.Map;
 
 import company.danhy.clothesuit.R;
-import company.danhy.clothesuit.activity.activity.adapter.GiayAdapter;
 import company.danhy.clothesuit.activity.activity.adapter.NonAdapter;
 import company.danhy.clothesuit.activity.activity.model.Sanpham;
 import company.danhy.clothesuit.activity.activity.ultil.Server;
 import company.danhy.clothesuit.activity.activity.ultil.checkconnect;
 
 public class NonActivity extends AppCompatActivity {
-
-
     Toolbar tbnon;
     ListView lvnon;
     NonAdapter nonAdapter;
     ArrayList<Sanpham> mangnon;
     int idnon=0;
     int page=1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_non);
-        anhxa();
         if(checkconnect.isNetworkAvailable(getApplicationContext())){
+            anhxa();
             GetIdloaisp();
             ActionToolbar();
             getData(page);
@@ -56,11 +51,37 @@ public class NonActivity extends AppCompatActivity {
             finish();
         }
 
+
     }
 
+    private void anhxa() {
+        tbnon =findViewById(R.id.toolbarnon);
+        lvnon=findViewById(R.id.listviewnon);
+        mangnon=new ArrayList<>();
+        nonAdapter=new NonAdapter(getApplicationContext(),mangnon);
+        lvnon.setAdapter(nonAdapter);
+    }
+    private void GetIdloaisp() {
+        idnon=getIntent().getIntExtra("idLoaiSanPham",-1);
+
+    }
+
+    private void ActionToolbar() {
+
+        setSupportActionBar(tbnon);
+        ActionBar actionBar=getSupportActionBar();
+        assert actionBar != null;
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        tbnon.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
     private void getData(int Page) {
         RequestQueue requestQueue=Volley.newRequestQueue(getApplicationContext());
-        String duongdan=Server.duongDanGiay+String.valueOf(Page);
+        String duongdan=Server.duongDanGiay + String.valueOf(Page);
         StringRequest stringRequest=new StringRequest(Request.Method.POST, duongdan, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -70,7 +91,7 @@ public class NonActivity extends AppCompatActivity {
                 String hinhanhnon="";
                 String motanon="";
                 int idspnon=0;
-                if(response!=null){
+                if(response!=null  && response.length()!=2){
                     try {
                         JSONArray jsonArray =new JSONArray(response);
                         for(int i=0;i<jsonArray.length();i++){
@@ -103,32 +124,5 @@ public class NonActivity extends AppCompatActivity {
             }
         };
         requestQueue.add(stringRequest);
-    }
-
-    private void ActionToolbar() {
-
-        setSupportActionBar(tbnon);
-        ActionBar actionBar=getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        tbnon.setNavigationOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-    }
-
-
-    private void GetIdloaisp() {
-        idnon=getIntent().getIntExtra("idLoaiSanPham",-1);
-        Log.d("giatriloaisanpham",idnon+ "");
-    }
-
-    private void anhxa(){
-        tbnon =findViewById(R.id.toolbargiay);
-        lvnon=findViewById(R.id.listviewgiay);
-        mangnon=new ArrayList<>();
-        nonAdapter=new NonAdapter(getApplicationContext(),mangnon);
-        lvnon.setAdapter(nonAdapter);
     }
 }
