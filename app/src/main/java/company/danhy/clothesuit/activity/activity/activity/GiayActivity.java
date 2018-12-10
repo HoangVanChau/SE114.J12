@@ -100,11 +100,11 @@ public class GiayActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                int id=0;
-               String tengiay="";
-               int giagiay=0;
-               String hinhanhgiay="";
-               String motagiay="";
-               int idspgiay=0;
+               String Tengiay="";
+               int Giagiay=0;
+               String Hinhanhgiay="";
+               String Motagiay="";
+               int IDSpgiay=0;
                if(response!=null && response.length()!=2){
                    lvgiay.removeFooterView(footerview);
                    try {
@@ -112,12 +112,12 @@ public class GiayActivity extends AppCompatActivity {
                        for(int i=0;i<jsonArray.length();i++){
                            JSONObject jsonObject=jsonArray.getJSONObject(i);
                            id=jsonObject.getInt("id");
-                           tengiay=jsonObject.getString("tensp");
-                           giagiay=jsonObject.getInt("giasp");
-                           hinhanhgiay=jsonObject.getString("hinhanhsp");
-                           motagiay=jsonObject.getString("motasp");
-                           idspgiay=jsonObject.getInt("idsanpham");
-                           manggiay.add(new Sanpham(id,tengiay,giagiay,hinhanhgiay,motagiay,idspgiay));
+                           Tengiay=jsonObject.getString("tensp");
+                           Giagiay=jsonObject.getInt("giasp");
+                           Hinhanhgiay=jsonObject.getString("hinhanhsp");
+                           Motagiay=jsonObject.getString("motasp");
+                           IDSpgiay=jsonObject.getInt("idsanpham");
+                           manggiay.add(new Sanpham(id,Tengiay,Giagiay,Hinhanhgiay,Motagiay,IDSpgiay));
                            giayAdapter.notifyDataSetChanged();
                        }
                    } catch (JSONException e) {
@@ -134,13 +134,14 @@ public class GiayActivity extends AppCompatActivity {
             public void onErrorResponse(VolleyError error) {
 
             }
-        }){
+        }) {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
-                HashMap<String,String>param=new HashMap<String,String>();
-                param.put("idLoaiSanPham",String.valueOf(idgiay));
+                HashMap<String, String> param = new HashMap<String, String>();
+                param.put("idLoaiSanPham", String.valueOf(idgiay));
                 return param;
             }
+
         };
         requestQueue.add(stringRequest);
     }
@@ -162,7 +163,6 @@ public class GiayActivity extends AppCompatActivity {
 
     private void GetIdloaisp() {
         idgiay=getIntent().getIntExtra("idLoaiSanPham",-1);
-
     }
 
     private void anhxa(){
