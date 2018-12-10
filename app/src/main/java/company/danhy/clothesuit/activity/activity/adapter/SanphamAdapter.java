@@ -1,6 +1,7 @@
 package company.danhy.clothesuit.activity.activity.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,7 +16,9 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import company.danhy.clothesuit.R;
+import company.danhy.clothesuit.activity.activity.activity.ChiTietSanPham;
 import company.danhy.clothesuit.activity.activity.model.Sanpham;
+import company.danhy.clothesuit.activity.activity.ultil.checkconnect;
 
 public class SanphamAdapter extends RecyclerView.Adapter<SanphamAdapter.ITemHolder> {
     Context context;
@@ -61,6 +64,17 @@ public class SanphamAdapter extends RecyclerView.Adapter<SanphamAdapter.ITemHold
             imghinhsanpham =itemView.findViewById(R.id.imgsanpham);
             txtgiasanpham =itemView.findViewById(R.id.textviewgiasanpham);
             txttensanpham=itemView.findViewById(R.id.textviewtensanpham);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent=new Intent(context,ChiTietSanPham.class);
+                    intent.putExtra("thongtinsanpham",arraysanpham.get(getAdapterPosition()));
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    checkconnect.ShowToast_Short(context,arraysanpham.get(getAdapterPosition()).getTensanpham());
+                    context.startActivity(intent);
+
+                }
+            });
         }
     }
 }

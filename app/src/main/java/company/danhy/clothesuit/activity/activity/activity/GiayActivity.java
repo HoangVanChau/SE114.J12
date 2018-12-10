@@ -59,7 +59,6 @@ public class GiayActivity extends AppCompatActivity {
             ActionToolbar();
             getData(page);
             LoadMoreData();
-
         }
         else{
             checkconnect.ShowToast_Short(getApplicationContext(),"Bạn vui lòng kiểm tra lại Internet");
@@ -163,7 +162,7 @@ public class GiayActivity extends AppCompatActivity {
 
     private void GetIdloaisp() {
         idgiay=getIntent().getIntExtra("idLoaiSanPham",-1);
-        Log.d("giatriloaisanpham",idgiay+ "");
+
     }
 
     private void anhxa(){

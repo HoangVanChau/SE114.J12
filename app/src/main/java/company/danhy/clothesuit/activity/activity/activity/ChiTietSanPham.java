@@ -1,15 +1,93 @@
 package company.danhy.clothesuit.activity.activity.activity;
 
+import android.media.Image;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
+
+import com.squareup.picasso.Picasso;
+
+import java.text.DecimalFormat;
 
 import company.danhy.clothesuit.R;
 
-public class ChiTietSanPham extends AppCompatActivity {
+import company.danhy.clothesuit.activity.activity.model.Sanpham;
 
+public class ChiTietSanPham extends AppCompatActivity {
+   Toolbar toolbarchitiet;
+   ImageView imgchitiet;
+   TextView txtten,txtgia,txtmota;
+   Button buttondatmua;
+   Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chi_tiet_san_pham);
+        anhxa();
+        ActionToolbar();
+        getinfomation();
+        CatchEventSpiner();
+    }
+
+    private void CatchEventSpiner() {
+        Integer[] soluong=new Integer[]{1,2,3,4,5,6,7,8,9,10};
+        ArrayAdapter<Integer> arrayAdapter =new ArrayAdapter<Integer>(this,android.R.layout.simple_spinner_dropdown_item,soluong );
+        spinner.setAdapter(arrayAdapter);
+    }
+
+    private void getinfomation() {
+        int id=0;
+        String Tenchitiet="";
+        int Giachitiet=0;
+        String Hinhanhchitiet="";
+        String Motachitiet="";
+        int idsanpham=0;
+        Sanpham sanpham = (Sanpham) getIntent().getSerializableExtra("thongtinsanpham");
+        id =sanpham.getID();
+        Tenchitiet=sanpham.getTensanpham();
+        Giachitiet=sanpham.getGiasanpham();
+        Hinhanhchitiet=sanpham.getHinhanhsanpham();
+        Motachitiet=sanpham.getMotasanpham();
+        idsanpham=sanpham.getIDSanpham();
+        txtten.setText(Tenchitiet);
+        DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
+        txtgia.setText("Giá: "+ decimalFormat.format(Giachitiet)+ "Đ");
+        txtmota.setText(Motachitiet);
+        Picasso.get().load(Hinhanhchitiet)
+                .placeholder(R.drawable.noimage)
+                .error(R.drawable.error)
+                .into(imgchitiet);
+
+    }
+
+    private void ActionToolbar() {
+        setSupportActionBar(toolbarchitiet);
+        ActionBar actionBar=getSupportActionBar();
+
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        toolbarchitiet.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+    }
+
+    private void anhxa() {
+        toolbarchitiet=findViewById(R.id.toolbarchitietsanpham);
+        imgchitiet=findViewById(R.id.imagechitietsanpham);
+        txtten=findViewById(R.id.textviewtenchitietsanpham);
+        txtgia=findViewById(R.id.textviewgiasanpham);
+        txtmota=findViewById(R.id.textviewmotachitietsanpham);
+        buttondatmua=findViewById(R.id.buttondatmua);
+        spinner =findViewById(R.id.spiner);
+
     }
 }

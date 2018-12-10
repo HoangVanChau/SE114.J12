@@ -1,9 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".activity.activity.activity.ChiTietSanPham">
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbarchitietsanpham"
+    android:background="#f9878585"
+    app:titleTextColor="#d10c15"
+    app:title="Chi tiết sản phẩm"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+</android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <ImageView
+           android:src="@mipmap/ic_launcher"
+           android:id="@+id/imagechitietsanpham"
+           android:layout_margin="10dp"
+           android:layout_width="150dp"
+           android:layout_height="150dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textviewtenchitietsanpham"
+                android:layout_margin="3dp"
+                android:textStyle="bold"
+                android:text="Tên sản phẩm"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textviewgiasanpham"
+                android:layout_margin="3dp"
+                android:textSize="20sp"
+                android:text="Giá sản phẩm"
+                android:textColor="#f20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
-</android.support.constraint.ConstraintLayout>
+            <Spinner
+                android:id="@+id/spiner"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/spinner"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </Spinner>
+
+            <Button
+                android:text="Thêm vào giỏ hàng"
+                android:textColor="#d1583a"
+                android:textSize="15sp"
+                android:id="@+id/buttondatmua"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginLeft="15dp"
+        android:textColor="#1cd140"
+        android:layout_marginTop="7dp"
+        android:textSize="25sp"
+        android:text="Mô tả chi tiết sản phẩm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"
+            android:id="@+id/textviewmotachitietsanpham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>
