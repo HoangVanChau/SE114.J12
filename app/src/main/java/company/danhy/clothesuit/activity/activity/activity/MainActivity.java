@@ -38,6 +38,7 @@ import java.util.ArrayList;
 import company.danhy.clothesuit.R;
 import company.danhy.clothesuit.activity.activity.adapter.LoaispAdapter;
 import company.danhy.clothesuit.activity.activity.adapter.SanphamAdapter;
+import company.danhy.clothesuit.activity.activity.model.Giohang;
 import company.danhy.clothesuit.activity.activity.model.Loaisp;
 import company.danhy.clothesuit.activity.activity.ultil.checkconnect;
 import company.danhy.clothesuit.activity.activity.model.Sanpham;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     ImageView imageViewHotItems;
     DrawerLayout drawerLayout;
     ArrayList <Loaisp> mangloaisanpham;
+
     LoaispAdapter loaispAdapter;
     int ID=0;
     String tenloaisanpham="";
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Sanpham> mangsanpham;
     SanphamAdapter sanphamAdapter;
 
+    public static ArrayList<Giohang>manggiohang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -347,6 +350,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewNewItems.setHasFixedSize(true);
         recyclerViewNewItems.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
         recyclerViewNewItems.setAdapter(sanphamAdapter);
+
+        if(manggiohang!=null){
+
+        }else{
+            manggiohang=new ArrayList<>();
+        }
 
     }
 }

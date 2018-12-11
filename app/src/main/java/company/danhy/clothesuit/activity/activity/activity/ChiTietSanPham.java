@@ -1,5 +1,6 @@
 package company.danhy.clothesuit.activity.activity.activity;
 
+import android.content.Intent;
 import android.media.Image;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,6 +19,7 @@ import java.text.DecimalFormat;
 
 import company.danhy.clothesuit.R;
 
+import company.danhy.clothesuit.activity.activity.model.Giohang;
 import company.danhy.clothesuit.activity.activity.model.Sanpham;
 
 public class ChiTietSanPham extends AppCompatActivity {
@@ -26,6 +28,13 @@ public class ChiTietSanPham extends AppCompatActivity {
    TextView txtten,txtgia,txtmota;
    Button buttondatmua;
    Spinner spinner;
+
+    int id=0;
+    String Tenchitiet="";
+    int Giachitiet=0;
+    String Hinhanhchitiet="";
+    String Motachitiet="";
+    int idsanpham=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +43,42 @@ public class ChiTietSanPham extends AppCompatActivity {
         ActionToolbar();
         getinfomation();
         CatchEventSpiner();
+        EventButton();
+    }
+
+    private void EventButton() {
+        buttondatmua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(MainActivity.manggiohang.size()>0){
+                    int sl=Integer.parseInt(spinner.getSelectedItem().toString());
+                    boolean exit =false;
+                    for(int i=0;i<MainActivity.manggiohang.size();i++){
+                        if(MainActivity.manggiohang.get(i).getIdsp()==id){
+                            MainActivity.manggiohang.get(i).setSoluongsp(MainActivity.manggiohang.get(i).getSoluongsp()+sl);
+                            if(MainActivity.manggiohang.get(i).getSoluongsp()>=10){
+                                MainActivity.manggiohang.get(i).setSoluongsp(10);
+                            }
+                            MainActivity.manggiohang.get(i).setGiasp(Giachitiet*MainActivity.manggiohang.get(i).getSoluongsp());
+                            exit=true;
+                        }
+                    }
+                    if(exit==false){
+                        int soluong=Integer.parseInt(spinner.getSelectedItem().toString());
+                        long giamoi=Giachitiet*soluong;
+                        MainActivity.manggiohang.add(new Giohang(id,Tenchitiet,giamoi,Hinhanhchitiet,soluong));
+
+                    }
+
+                }else{
+                    int soluong=Integer.parseInt(spinner.getSelectedItem().toString());
+                    long giamoi=Giachitiet*soluong;
+                    MainActivity.manggiohang.add(new Giohang(id,Tenchitiet,giamoi,Hinhanhchitiet,soluong));
+                }
+                Intent intent=new Intent(getApplicationContext(), company.danhy.clothesuit.activity.activity.activity.Giohang.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void CatchEventSpiner() {
@@ -43,12 +88,7 @@ public class ChiTietSanPham extends AppCompatActivity {
     }
 
     private void getinfomation() {
-        int id=0;
-        String Tenchitiet="";
-        int Giachitiet=0;
-        String Hinhanhchitiet="";
-        String Motachitiet="";
-        int idsanpham=0;
+
         Sanpham sanpham = (Sanpham) getIntent().getSerializableExtra("thongtinsanpham");
         id =sanpham.getID();
         Tenchitiet=sanpham.getTensanpham();
