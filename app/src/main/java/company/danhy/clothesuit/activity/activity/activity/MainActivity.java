@@ -45,7 +45,7 @@ import company.danhy.clothesuit.activity.activity.model.Loaisp;
 import company.danhy.clothesuit.activity.activity.ultil.checkconnect;
 import company.danhy.clothesuit.activity.activity.model.Sanpham;
 import company.danhy.clothesuit.activity.activity.ultil.Server;
-import company.danhy.clothesuit.activity.activity.activity.Giohang;
+import company.danhy.clothesuit.activity.activity.model.Giohang;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar ;
