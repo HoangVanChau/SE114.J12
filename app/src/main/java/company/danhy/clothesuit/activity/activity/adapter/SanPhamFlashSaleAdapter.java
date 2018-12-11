@@ -20,11 +20,11 @@ import company.danhy.clothesuit.activity.activity.activity.ChiTietSanPham;
 import company.danhy.clothesuit.activity.activity.model.Sanpham;
 import company.danhy.clothesuit.activity.activity.ultil.checkconnect;
 
-public class SanphamAdapter extends RecyclerView.Adapter<SanphamAdapter.ITemHolder> {
+public class SanPhamFlashSaleAdapter extends RecyclerView.Adapter<SanPhamFlashSaleAdapter.ITemHolder> {
     Context context;
     ArrayList<Sanpham> arraysanpham;
 
-    public SanphamAdapter(Context context, ArrayList<Sanpham> arraysanpham) {
+    public SanPhamFlashSaleAdapter(Context context, ArrayList<Sanpham> arraysanpham) {
         this.context = context;
         this.arraysanpham = arraysanpham;
     }
@@ -32,7 +32,7 @@ public class SanphamAdapter extends RecyclerView.Adapter<SanphamAdapter.ITemHold
     @NonNull
     @Override
     public ITemHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View v=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.dong_sanphammoinhat,null);
+        View v=LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.dong_sanphamflashsale,null);
         ITemHolder iTemHolder=new ITemHolder(v);
 
         return iTemHolder;
@@ -40,10 +40,9 @@ public class SanphamAdapter extends RecyclerView.Adapter<SanphamAdapter.ITemHold
 
     @Override
     public void onBindViewHolder(@NonNull ITemHolder iTemHolder, int i) {
-      Sanpham sanpham =arraysanpham.get(i);
-      iTemHolder.txttensanpham.setText(sanpham.getTensanpham());
+        Sanpham sanpham =arraysanpham.get(i);
         DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
-        iTemHolder.txtgiasanpham.setText( decimalFormat.format(sanpham.getGiasanpham())+"VNĐ");
+        iTemHolder.txtgiasanpham.setText(decimalFormat.format(sanpham.getGiasanpham())+" VNĐ");
         Picasso.get().load(sanpham.getHinhanhsanpham())
                 .placeholder(R.drawable.noimage)
                 .error(R.drawable.error)
@@ -57,13 +56,12 @@ public class SanphamAdapter extends RecyclerView.Adapter<SanphamAdapter.ITemHold
 
     public class ITemHolder extends RecyclerView.ViewHolder{
         public ImageView imghinhsanpham;
-        public TextView txttensanpham,txtgiasanpham;
+        public TextView txtgiasanpham;
 
         public ITemHolder(@NonNull View itemView) {
             super(itemView);
-            imghinhsanpham =itemView.findViewById(R.id.imgsanpham);
-            txtgiasanpham =itemView.findViewById(R.id.textviewgiasanpham);
-            txttensanpham=itemView.findViewById(R.id.textviewtensanpham);
+            imghinhsanpham =itemView.findViewById(R.id.anhSanPham);
+            txtgiasanpham =itemView.findViewById(R.id.giaSanPham);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

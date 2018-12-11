@@ -8,6 +8,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -20,6 +21,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ViewFlipper;
+
 
 
 import com.android.volley.RequestQueue;
@@ -37,32 +39,33 @@ import java.util.ArrayList;
 
 import company.danhy.clothesuit.R;
 import company.danhy.clothesuit.activity.activity.adapter.LoaispAdapter;
+import company.danhy.clothesuit.activity.activity.adapter.SanPhamFlashSaleAdapter;
 import company.danhy.clothesuit.activity.activity.adapter.SanphamAdapter;
-import company.danhy.clothesuit.activity.activity.model.Giohang;
 import company.danhy.clothesuit.activity.activity.model.Loaisp;
 import company.danhy.clothesuit.activity.activity.ultil.checkconnect;
 import company.danhy.clothesuit.activity.activity.model.Sanpham;
 import company.danhy.clothesuit.activity.activity.ultil.Server;
-
+import company.danhy.clothesuit.activity.activity.activity.Giohang;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar ;
     ViewFlipper viewFlipper;
-    RecyclerView recyclerViewHotItems,recyclerViewNewItems;
+    RecyclerView recyclerViewflashSaleItems,recyclerViewNewItems;
     NavigationView navigationView;
     ListView listViewManHinhChinh;
     ImageView imageViewHotItems;
     DrawerLayout drawerLayout;
     ArrayList <Loaisp> mangloaisanpham;
-
     LoaispAdapter loaispAdapter;
     int ID=0;
     String tenloaisanpham="";
     String hinhanhloaisanpham="";
 
     ArrayList<Sanpham> mangsanpham;
+    ArrayList<Sanpham> mangSanPhamFlashSale;
     SanphamAdapter sanphamAdapter;
 
+    SanPhamFlashSaleAdapter sanPhamFlashSaleAdapter;
     public static ArrayList<Giohang>manggiohang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
             ActionViewFlipper();
             getDuLieuLoaiSanPham();
             getDuLieuSPMoiNhat();
+            getDuLieuSPFlashSale();
             catOnItemListView();
         }else{
             checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối ");
@@ -170,6 +174,45 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void getDuLieuSPFlashSale() {
+        RequestQueue requestQueue =Volley.newRequestQueue(getApplicationContext());
+        JsonArrayRequest jsonArrayRequest=new JsonArrayRequest(Server.duongDanSanPhamFlashSale, new Response.Listener<JSONArray>() {
+            @Override
+            public void onResponse(JSONArray response) {
+                if (response != null) {
+                    int ID = 0;
+                    String Tensanpham = "";
+                    Integer Giasanpham = 0;
+                    String Hinhanhsanpham = "";
+                    String Motasanpham = "";
+                    int IDsanpham = 0;
+                    for(int i=0;i<response.length();i++){
+                        try {
+                            JSONObject jsonObject  =response.getJSONObject(i);
+                            ID=jsonObject.getInt("id");
+                            Tensanpham=jsonObject.getString("tensp");
+                            Giasanpham=jsonObject.getInt("giasp");
+                            Hinhanhsanpham=jsonObject.getString("hinhanhsp");
+                            Motasanpham=jsonObject.getString("motasp");
+                            IDsanpham=jsonObject.getInt("idsanpham");
+                            mangSanPhamFlashSale.add(new Sanpham(ID,Tensanpham,Giasanpham,Hinhanhsanpham,Motasanpham,IDsanpham));
+                            sanPhamFlashSaleAdapter.notifyDataSetChanged();
+                        }  catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(jsonArrayRequest);
+    }
+
 
     private void getDuLieuSPMoiNhat() {
         RequestQueue requestQueue =Volley.newRequestQueue(getApplicationContext());
@@ -333,11 +376,11 @@ public class MainActivity extends AppCompatActivity {
     void AnhXa(){
         toolbar = findViewById(R.id.toolbar);
         viewFlipper = findViewById(R.id.viewFlipper);
-        recyclerViewHotItems =  findViewById(R.id.recyclerViewHotItems);
+        recyclerViewflashSaleItems =  findViewById(R.id.recyclerViewHotItems);
         recyclerViewNewItems = findViewById(R.id.recyclerViewNewItems);
         navigationView = findViewById(R.id.navigationView);
         listViewManHinhChinh = findViewById(R.id.listViewManHinhChinh);
-        imageViewHotItems = findViewById(R.id.imageViewHotItems);
+
         drawerLayout = findViewById(R.id.drawerLayout);
 
         mangloaisanpham =new ArrayList<>();
@@ -346,16 +389,25 @@ public class MainActivity extends AppCompatActivity {
         listViewManHinhChinh.setAdapter(loaispAdapter);
 
         mangsanpham=new ArrayList<>();
+        mangSanPhamFlashSale=new ArrayList<>();
         sanphamAdapter =new SanphamAdapter(getApplicationContext(),mangsanpham);
+        sanPhamFlashSaleAdapter = new SanPhamFlashSaleAdapter(getApplicationContext(),mangSanPhamFlashSale);
+
+        recyclerViewflashSaleItems.setHasFixedSize(true);
+        recyclerViewflashSaleItems.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.HORIZONTAL,false));
+        recyclerViewflashSaleItems.setAdapter(sanPhamFlashSaleAdapter);
+
         recyclerViewNewItems.setHasFixedSize(true);
         recyclerViewNewItems.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
         recyclerViewNewItems.setAdapter(sanphamAdapter);
-
         if(manggiohang!=null){
 
         }else{
             manggiohang=new ArrayList<>();
         }
 
+        imageViewHotItems = findViewById(R.id.imageViewHotItems);
+        imageViewHotItems.setImageResource(R.drawable.flashsale);
+        imageViewHotItems.setScaleType(ImageView.ScaleType.FIT_START);
     }
 }

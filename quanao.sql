@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 30, 2018 lúc 04:27 PM
+-- Thời gian đã tạo: Th12 11, 2018 lúc 11:32 AM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.2.12
 
@@ -182,6 +182,32 @@ INSERT INTO `sanpham` (`id`, `tenSanPham`, `giaSanPham`, `hinhAnhSanPham`, `moTa
 (88, 'Dép xỏ ngón quai kẹp nam cao cấp sản xuất tại Thái Lan ', 99000, 'https://vn-live-01.slatic.net/original/fa505c3e80386269e92da2219bf25c37.jpg', 'Xuất xứ: dép sản xuất tạiThái Lan\r\nChất liệu: xốp EVA cao cấp, đế có thiết kế dạng gợn sóng bằng cao su tăng độ ma sát\r\nDép rất chắc chắn, bền đẹp và êm chân\r\nMàu sắc: xám phối cam\r\nKích thước: 39-40-41-42\r\nCam kết y hình, được mở sản phẩm kiểm tra trước khi thanh toán nên quý khách yên tâm về chất lượng sản phẩm', 5),
 (89, 'Dép Quai Ngang 3 Sọc- Bám Sàn Rất Tốt ', 205, 'https://vn-test-11.slatic.net/p/7/dep-quai-ngang-3-soc-bam-san-rat-tot-do-1016-17191271-fd54a61d642e2a031436ca455e80e464-catalog_233.jpg', 'ép quai ngang 3 sọc- bám sàn rất tốt.\r\nChất liệu cao cấp\r\nThiết kế thời trang\r\nĐường may chi tiết, tỉ mỉ', 5);
 
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `sanphamflashsale`
+--
+
+CREATE TABLE `sanphamflashsale` (
+  `id` int(11) NOT NULL,
+  `idSanPham` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `sanphamflashsale`
+--
+
+INSERT INTO `sanphamflashsale` (`id`, `idSanPham`) VALUES
+(1, 2),
+(2, 4),
+(4, 13),
+(3, 25),
+(7, 31),
+(6, 32),
+(8, 35),
+(9, 37),
+(5, 55);
+
 --
 -- Chỉ mục cho các bảng đã đổ
 --
@@ -211,6 +237,13 @@ ALTER TABLE `sanpham`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Chỉ mục cho bảng `sanphamflashsale`
+--
+ALTER TABLE `sanphamflashsale`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `idSanPham` (`idSanPham`);
+
+--
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
 
@@ -237,6 +270,22 @@ ALTER TABLE `loaisanpham`
 --
 ALTER TABLE `sanpham`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+
+--
+-- AUTO_INCREMENT cho bảng `sanphamflashsale`
+--
+ALTER TABLE `sanphamflashsale`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- Các ràng buộc cho các bảng đã đổ
+--
+
+--
+-- Các ràng buộc cho bảng `sanphamflashsale`
+--
+ALTER TABLE `sanphamflashsale`
+  ADD CONSTRAINT `sanphamflashsale_ibfk_1` FOREIGN KEY (`idSanPham`) REFERENCES `sanpham` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
