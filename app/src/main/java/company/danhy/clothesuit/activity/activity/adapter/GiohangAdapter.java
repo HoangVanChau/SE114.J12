@@ -70,7 +70,7 @@ public class GiohangAdapter extends BaseAdapter {
                 .placeholder(R.drawable.noimage)
                 .error(R.drawable.error)
                 .into(viewHolder.imggiohang);
-        viewHolder.btvalue.setText(giohang.getSoluongsp());
+        viewHolder.btvalue.setText(giohang.getSoluongsp()+"");
         return convertView;
     }
 }

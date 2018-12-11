@@ -13,6 +13,8 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
@@ -83,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
             checkconnect.ShowToast_Short(getApplicationContext(),"Bạn kiểm tra lại kết nối ");
             finish();
         }
-
-
     }
+
+
 
     private void catOnItemListView() {
         listViewManHinhChinh.setOnItemClickListener(new AdapterView.OnItemClickListener() {
