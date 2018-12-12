@@ -25,6 +25,7 @@
            android:layout_width="150dp"
            android:layout_height="150dp" />
         <LinearLayout
+            android:gravity="center"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -47,6 +48,7 @@
                 android:layout_height="wrap_content" />
 
             <Spinner
+                android:foregroundGravity="center"
                 android:id="@+id/spiner"
                 android:layout_gravity="center"
                 android:layout_margin="3dp"
@@ -76,7 +78,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:layout_marginLeft="15dp"
+        android:layout_marginLeft="10dp"
         android:textColor="#1cd140"
         android:layout_marginTop="7dp"
         android:textSize="25sp"

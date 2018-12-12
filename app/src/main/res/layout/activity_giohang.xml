@@ -61,7 +61,6 @@
                     android:layout_weight="1"
                     android:gravity="center">
                     <TextView
-                        android:id="@+id/textviewtongtien"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tổng tiền:"
@@ -69,11 +68,12 @@
                         android:textSize="25sp" />
                 </LinearLayout>
                 <LinearLayout
-                    android:gravity="right|center"
+                    android:gravity="center"
                     android:layout_weight="1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent">
                     <TextView
+                        android:id="@+id/textviewtongtien"
                         android:textColor="#f20"
                         android:text="Giá trị"
                         android:textSize="25sp"

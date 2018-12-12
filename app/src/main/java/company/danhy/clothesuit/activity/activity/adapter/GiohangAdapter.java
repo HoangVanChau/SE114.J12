@@ -15,6 +15,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 import company.danhy.clothesuit.R;
+import company.danhy.clothesuit.activity.activity.activity.MainActivity;
 import company.danhy.clothesuit.activity.activity.model.Giohang;
 
 public class GiohangAdapter extends BaseAdapter {
@@ -46,7 +47,7 @@ public class GiohangAdapter extends BaseAdapter {
      public Button btleft,btvalue,btright;
     }
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
       ViewHolder viewHolder=null;
       if(convertView==null){
           viewHolder=new ViewHolder();
@@ -71,6 +72,65 @@ public class GiohangAdapter extends BaseAdapter {
                 .error(R.drawable.error)
                 .into(viewHolder.imggiohang);
         viewHolder.btvalue.setText(giohang.getSoluongsp()+"");
+        final int sl= Integer.parseInt(viewHolder.btvalue.getText().toString());
+        if(sl>=10){
+            viewHolder.btright.setVisibility(View.INVISIBLE);
+            viewHolder.btleft.setVisibility(View.VISIBLE);
+        }else if(sl<=1){
+            viewHolder.btleft.setVisibility(View.INVISIBLE);
+        }else if(sl>=1){
+            viewHolder.btleft.setVisibility(View.VISIBLE);
+            viewHolder.btright.setVisibility(View.VISIBLE);
+        }
+        final ViewHolder finalViewHolder = viewHolder;
+        viewHolder.btright.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int slmoinhat=Integer.parseInt(finalViewHolder.btvalue.getText().toString())+1;
+                int slhientai=MainActivity.manggiohang.get(position).getSoluongsp();
+                long giaht=MainActivity.manggiohang.get(position).getGiasp();
+                MainActivity.manggiohang.get(position).setSoluongsp(slmoinhat);
+                long giamoinhat=(giaht*slmoinhat)/slhientai;
+                MainActivity.manggiohang.get(position).setGiasp(giamoinhat);
+                DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
+                finalViewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giamoinhat)+"Đ");
+                company.danhy.clothesuit.activity.activity.activity.Giohang.evenUltil();
+                if(slmoinhat>9){
+                    finalViewHolder.btright.setVisibility(View.INVISIBLE);
+                    finalViewHolder.btleft.setVisibility(View.VISIBLE);
+                    finalViewHolder.btvalue.setText(String.valueOf(slmoinhat));
+                }else{
+                    finalViewHolder.btright.setVisibility(View.VISIBLE);
+                    finalViewHolder.btleft.setVisibility(View.VISIBLE);
+                    finalViewHolder.btvalue.setText(String.valueOf(slmoinhat));
+                }
+            }
+        });
+        viewHolder.btleft.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                int slmoinhat=Integer.parseInt(finalViewHolder.btvalue.getText().toString())-1;
+                int slhientai=MainActivity.manggiohang.get(position).getSoluongsp();
+                long giaht=MainActivity.manggiohang.get(position).getGiasp();
+                MainActivity.manggiohang.get(position).setSoluongsp(slmoinhat);
+                long giamoinhat=(giaht*slmoinhat)/slhientai;
+                MainActivity.manggiohang.get(position).setGiasp(giamoinhat);
+                DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
+                finalViewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giamoinhat)+"Đ");
+                company.danhy.clothesuit.activity.activity.activity.Giohang.evenUltil();
+                if(slmoinhat < 2){
+                    finalViewHolder.btleft.setVisibility(View.INVISIBLE);
+                    finalViewHolder.btright.setVisibility(View.VISIBLE);
+                    finalViewHolder.btvalue.setText(String.valueOf(slmoinhat));
+                }else{
+                    finalViewHolder.btright.setVisibility(View.VISIBLE);
+                    finalViewHolder.btleft.setVisibility(View.VISIBLE);
+                    finalViewHolder.btvalue.setText(String.valueOf(slmoinhat));
+                }
+
+            }
+        });
         return convertView;
     }
 }

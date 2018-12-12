@@ -5,5 +5,4 @@
         android:icon="@drawable/muahang"
         android:title="Giỏ hàng"
         app:showAsAction="always"/>
-
 </menu>
