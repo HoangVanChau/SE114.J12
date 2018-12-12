@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".activity.activity.activity.AoActivity">
     <android.support.v7.widget.Toolbar
-        android:background="#c9aeaa"
-        app:titleTextColor="#f9e403"
+        android:background="@color/colorToolBar"
+        app:titleTextColor="#FFFFFF"
         app:title="Áo"
         android:id="@+id/toolbarao"
         android:layout_width="match_parent"

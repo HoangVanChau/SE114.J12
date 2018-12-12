@@ -8,8 +8,8 @@
     tools:context=".activity.activity.activity.Giohang"
     android:weightSum="10">
     <android.support.v7.widget.Toolbar
-        android:background="#1eea22"
-        app:titleTextColor="#ec280a"
+        android:background="@color/colorToolBar"
+        app:titleTextColor="#FFFFFF"
         app:title="Giỏ Hàng"
         android:id="@+id/toolbargiohang"
         android:layout_width="match_parent"
@@ -64,7 +64,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Tổng tiền:"
-                        android:textColor="#f20"
+                        android:textColor="@color/colorPrimary"
                         android:textSize="25sp" />
                 </LinearLayout>
                 <LinearLayout
@@ -74,7 +74,7 @@
                     android:layout_height="match_parent">
                     <TextView
                         android:id="@+id/textviewtongtien"
-                        android:textColor="#f20"
+                        android:textColor="@color/colorPrimary"
                         android:text="Giá trị"
                         android:textSize="25sp"
                         android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
 
     </LinearLayout>
     <Button
-        android:textColor="#f20"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:text="Thanh toán giỏ hàng"
         android:id="@+id/buttonthanhtoan"
@@ -93,7 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp" />
     <Button
-        android:textColor="#f20"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         android:text="Tiếp tục mua hàng"
         android:id="@+id/buttontieptucmuahang"

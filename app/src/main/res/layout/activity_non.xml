@@ -7,8 +7,8 @@
     android:orientation="vertical"
     tools:context=".activity.activity.activity.NonActivity">
     <android.support.v7.widget.Toolbar
-        android:background="#c9aeaa"
-        app:titleTextColor="#fc3605"
+        android:background="@color/colorToolBar"
+        app:titleTextColor="#FFFFFF"
         app:title="Nón"
         android:id="@+id/toolbarnon"
         android:layout_width="match_parent"

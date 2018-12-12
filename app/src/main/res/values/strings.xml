@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">Clothesuit</string>
-    <string name="toolBarTitleName">Trang chính</string>
-    <string name="titleListItems">Danh mục sản phẩm</string>
+    <string name="toolBarTitleName">Clothesuit</string>
+    <string name="titleListItems">All products</string>
 </resources>

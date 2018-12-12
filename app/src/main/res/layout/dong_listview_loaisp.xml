@@ -27,7 +27,7 @@
           android:layout_height="wrap_content"
           android:layout_margin="5dp"
           android:text="Loại sản phẩm"
-          android:textColor="#f20"
+          android:textColor="@color/colorPrimary"
           android:textSize="20sp" />
   </LinearLayout>
 

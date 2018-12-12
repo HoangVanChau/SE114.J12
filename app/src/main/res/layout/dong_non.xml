@@ -36,7 +36,7 @@
                     android:textSize="18sp"
                     android:id="@+id/textviewgianon"
                     android:text="Giá nón"
-                    android:textColor="#f20"
+                    android:textColor="@color/colorPrimary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
                 <TextView

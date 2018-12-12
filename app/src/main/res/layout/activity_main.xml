@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.LinearLayoutCompat
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -11,68 +12,99 @@
         android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <LinearLayout
+        <android.support.design.widget.CoordinatorLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <android.support.v7.widget.Toolbar
-                app:titleTextColor="@color/colorToolBarTitle"
-                android:background="@color/colorToolBar"
-                app:title="@string/toolBarTitleName"
-                android:id="@+id/toolbar"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.NestedScrollView
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize">
-            </android.support.v7.widget.Toolbar>
-            <ViewFlipper
-                android:id="@+id/viewFlipper"
-                android:layout_width="match_parent"
-                android:layout_height="150dp">
-            </ViewFlipper>
-            <LinearLayout
-                android:padding="10dp"
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <LinearLayout
-                    android:layout_marginBottom="10dp"
-                    android:orientation="vertical"
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp">
-                    <ImageView
-                        android:id="@+id/imageViewHotItems"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp" />
-                    <LinearLayout
-                        android:layout_marginBottom="5dp"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <android.support.v7.widget.RecyclerView
-                            android:id="@+id/recyclerViewHotItems"
-                            android:orientation="horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-                        </android.support.v7.widget.RecyclerView>
-                    </LinearLayout>
-                </LinearLayout>
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <!-- Your Scrollable contents should be here - such as,
+                ViewPager or etc -->
+
                 <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
-                        android:textColor="#f20"
+                        android:textColor="@color/colorPrimary"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:text="@string/titleListItems"
                         android:layout_width="match_parent"
                         android:layout_height="30dp" />
-                    <android.support.v7.widget.RecyclerView
-                        android:id="@+id/recyclerViewNewItems"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                    </android.support.v7.widget.RecyclerView>
+
+                    <include layout="@layout/content_main" />
                 </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+            <android.support.design.widget.AppBarLayout
+                android:background="#FFFFFF"
+                android:id="@+id/appbar"
+                android:fitsSystemWindows="true"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:layout_width="match_parent"
+                android:layout_height="320dp">
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:background="#FFFFFF"
+                    android:id="@+id/collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:expandedTitleTextAppearance="@android:color/transparent"
+                    app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.Toolbar
+                            android:id="@+id/toolbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="?attr/actionBarSize"
+                            android:background="@color/colorToolBar"
+                            app:title="@string/toolBarTitleName"
+                            app:titleTextColor="@color/colorToolBarTitle"></android.support.v7.widget.Toolbar>
+
+                        <ViewFlipper
+                            android:id="@+id/viewFlipper"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"></ViewFlipper>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageViewHotItems"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="5dp">
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/recyclerViewHotItems"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal"></android.support.v7.widget.RecyclerView>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.design.widget.CollapsingToolbarLayout>
+            </android.support.design.widget.AppBarLayout>
+        </android.support.design.widget.CoordinatorLayout>
         <android.support.design.widget.NavigationView
             android:id="@+id/navigationView"
             android:layout_gravity="start"

@@ -8,8 +8,8 @@
     tools:context=".activity.activity.activity.ChiTietSanPham">
 <android.support.v7.widget.Toolbar
     android:id="@+id/toolbarchitietsanpham"
-    android:background="#f9878585"
-    app:titleTextColor="#d10c15"
+    android:background="@color/colorToolBar"
+    app:titleTextColor="#FFFFFF"
     app:title="Chi tiết sản phẩm"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize">

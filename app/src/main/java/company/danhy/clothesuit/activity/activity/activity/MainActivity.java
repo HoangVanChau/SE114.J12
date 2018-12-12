@@ -2,6 +2,8 @@ package company.danhy.clothesuit.activity.activity.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.support.design.widget.AppBarLayout;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -74,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         AnhXa();
         if(checkconnect.isNetworkAvailable(getApplicationContext())){
             ActionBar();
@@ -87,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
     }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -397,7 +399,7 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
 
         mangloaisanpham =new ArrayList<>();
-        mangloaisanpham.add(0,new Loaisp(0,"Trang Chính","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyyPFbxER9CaziwnRh9UgBFqauaA2DOR_ZTCXFkK9iLmFdeoPE5w"));
+        mangloaisanpham.add(0,new Loaisp(0,"Clothesuit","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyyPFbxER9CaziwnRh9UgBFqauaA2DOR_ZTCXFkK9iLmFdeoPE5w"));
         loaispAdapter=new LoaispAdapter(mangloaisanpham,getApplicationContext());
         listViewManHinhChinh.setAdapter(loaispAdapter);
 
@@ -422,5 +424,6 @@ public class MainActivity extends AppCompatActivity {
         imageViewHotItems = findViewById(R.id.imageViewHotItems);
         imageViewHotItems.setImageResource(R.drawable.flashsale);
         imageViewHotItems.setScaleType(ImageView.ScaleType.FIT_START);
-    }
+
+}
 }

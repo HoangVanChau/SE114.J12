@@ -7,8 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".activity.activity.activity.QuanActivity">
     <android.support.v7.widget.Toolbar
-        android:background="#c9aeaa"
-        app:titleTextColor="#2ce132"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="#FFFFFFFF"
         app:title="Quần"
         android:id="@+id/toolbarquan"
         android:layout_width="match_parent"
