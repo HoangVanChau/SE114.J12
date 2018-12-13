@@ -66,7 +66,7 @@ public class GiohangAdapter extends BaseAdapter {
       Giohang giohang= (Giohang) getItem(position);
       viewHolder.txttengiohang.setText(giohang.getTensp());
         DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
-        viewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giohang.getGiasp())+"Đ");
+        viewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giohang.getGiasp())+"VNĐ");
         Picasso.get().load(giohang.getHinhanhsp())
                 .placeholder(R.drawable.noimage)
                 .error(R.drawable.error)
@@ -93,7 +93,7 @@ public class GiohangAdapter extends BaseAdapter {
                 long giamoinhat=(giaht*slmoinhat)/slhientai;
                 MainActivity.manggiohang.get(position).setGiasp(giamoinhat);
                 DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
-                finalViewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giamoinhat)+"Đ");
+                finalViewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giamoinhat)+"VNĐ");
                 company.danhy.clothesuit.activity.activity.activity.Giohang.evenUltil();
                 if(slmoinhat>9){
                     finalViewHolder.btright.setVisibility(View.INVISIBLE);
@@ -117,7 +117,7 @@ public class GiohangAdapter extends BaseAdapter {
                 long giamoinhat=(giaht*slmoinhat)/slhientai;
                 MainActivity.manggiohang.get(position).setGiasp(giamoinhat);
                 DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
-                finalViewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giamoinhat)+"Đ");
+                finalViewHolder.txtgiagiohang.setText("Giá: "+ decimalFormat.format(giamoinhat)+"VNĐ");
                 company.danhy.clothesuit.activity.activity.activity.Giohang.evenUltil();
                 if(slmoinhat < 2){
                     finalViewHolder.btleft.setVisibility(View.INVISIBLE);

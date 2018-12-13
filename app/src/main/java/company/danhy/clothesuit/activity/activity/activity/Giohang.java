@@ -105,7 +105,7 @@ public class Giohang extends AppCompatActivity {
             tongtien+=MainActivity.manggiohang.get(i).getGiasp();
         }
         DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
-        txttongtien.setText(decimalFormat.format(tongtien)+ "Đ");
+        txttongtien.setText(decimalFormat.format(tongtien)+ "VNĐ");
     }
 
     private void checkData() {

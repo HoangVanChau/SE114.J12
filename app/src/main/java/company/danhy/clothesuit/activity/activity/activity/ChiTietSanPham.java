@@ -47,7 +47,21 @@ public class ChiTietSanPham extends AppCompatActivity {
         CatchEventSpiner();
         EventButton();
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menuu,menu);
+        return true;
+    }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()){
+            case R.id.menugiohang:
+                Intent intent=new Intent(getApplicationContext(), company.danhy.clothesuit.activity.activity.activity.Giohang.class);
+                startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     private void EventButton() {
         buttondatmua.setOnClickListener(new View.OnClickListener() {
@@ -101,7 +115,7 @@ public class ChiTietSanPham extends AppCompatActivity {
         idsanpham=sanpham.getIDSanpham();
         txtten.setText(Tenchitiet);
         DecimalFormat decimalFormat =new DecimalFormat("###,###,###");
-        txtgia.setText("Giá: "+ decimalFormat.format(Giachitiet)+ "Đ");
+        txtgia.setText("Giá: "+ decimalFormat.format(Giachitiet)+ "VNĐ");
         txtmota.setText(Motachitiet);
         Picasso.get().load(Hinhanhchitiet)
                 .placeholder(R.drawable.noimage)
