@@ -57,14 +57,14 @@ public class Thongtinkhachhang extends AppCompatActivity {
                 final String sdt=edsdt.getText().toString().trim();
                 final String email=edemail.getText().toString().trim();
                 final String diachi=eddiachi.getText().toString().trim();
-                if(ten.length()>0&&sdt.length()>0&& email.length()>0&& diachi.length()>0){
+                if(ten.length()>0 && sdt.length()>0 && email.length()>0 && diachi.length()>0){
                     RequestQueue requestQueue =Volley.newRequestQueue(getApplicationContext());
                     StringRequest stringRequest =new StringRequest(Request.Method.POST, Server.duongDanThongTinKhachHang, new Response.Listener<String>() {
                         @Override
                         public void onResponse(final String madonhang) {
                             Log.d("madonhang",madonhang);
                             if(Integer.parseInt(madonhang)>0){
-                               RequestQueue Queue1 =Volley.newRequestQueue(getApplicationContext());
+                               RequestQueue queue =Volley.newRequestQueue(getApplicationContext());
                                StringRequest request=new StringRequest(Request.Method.POST, Server.duongDanChiTietDonHang, new Response.Listener<String>() {
                                    @Override
                                    public void onResponse(String response) {
@@ -105,7 +105,7 @@ public class Thongtinkhachhang extends AppCompatActivity {
                                        return hashMap;
                                    }
                                };
-                               Queue1.add(request);
+                               queue.add(request);
                             }
                         }
 

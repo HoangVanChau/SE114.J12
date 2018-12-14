@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 13, 2018 lúc 03:47 AM
+-- Thời gian đã tạo: Th12 14, 2018 lúc 05:50 AM
 -- Phiên bản máy phục vụ: 10.1.37-MariaDB
 -- Phiên bản PHP: 7.2.12
 
@@ -25,10 +25,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `chitietdonhang`
+-- Cấu trúc bảng cho bảng `chitietdonmuahang`
 --
 
-CREATE TABLE `chitietdonhang` (
+CREATE TABLE `chitietdonmuahang` (
   `id` int(11) NOT NULL,
   `madonhang` int(11) NOT NULL,
   `masanpham` int(11) NOT NULL,
@@ -47,7 +47,8 @@ CREATE TABLE `donhang` (
   `id` int(11) NOT NULL,
   `tenkhachhang` varchar(200) NOT NULL,
   `sodienthoai` int(11) NOT NULL,
-  `email` varchar(100) NOT NULL
+  `email` varchar(100) NOT NULL,
+  `diachi` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -213,9 +214,9 @@ INSERT INTO `sanphamflashsale` (`id`, `idSanPham`) VALUES
 --
 
 --
--- Chỉ mục cho bảng `chitietdonhang`
+-- Chỉ mục cho bảng `chitietdonmuahang`
 --
-ALTER TABLE `chitietdonhang`
+ALTER TABLE `chitietdonmuahang`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -248,16 +249,10 @@ ALTER TABLE `sanphamflashsale`
 --
 
 --
--- AUTO_INCREMENT cho bảng `chitietdonhang`
---
-ALTER TABLE `chitietdonhang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT cho bảng `donhang`
 --
 ALTER TABLE `donhang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT cho bảng `loaisanpham`

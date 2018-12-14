@@ -8,7 +8,7 @@ foreach ($data as $value) {
     $tensanpham=$value['tensanpham'];
     $giasanpham=$value['giasanpham'];
     $soluongsanpham=$value['soluongsanpham'];
-    $query="INSERT INTO chitietdonhang(id,madonhang,masanpham,tensanpham,giasanpham,soluongsanpham) 
+    $query="INSERT INTO chitietdonmuahang(id,madonhang,masanpham,tensanpham,giasanpham,soluongsanpham)
         VALUES (NULL,'$madonhang','$masanpham','$tensanpham','$giasanpham','$soluongsanpham')";
     $Dta = mysqli_query($conn,$query);
 }
