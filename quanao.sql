@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
@@ -217,7 +217,8 @@ INSERT INTO `sanphamflashsale` (`id`, `idSanPham`) VALUES
 -- Chỉ mục cho bảng `chitietdonmuahang`
 --
 ALTER TABLE `chitietdonmuahang`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+ADD KEY `madonhang` (`madonhang`);
 
 --
 -- Chỉ mục cho bảng `donhang`
@@ -275,6 +276,9 @@ ALTER TABLE `sanphamflashsale`
 --
 -- Các ràng buộc cho các bảng đã đổ
 --
+
+ALTER TABLE `chitietdonmuahang`
+  ADD CONSTRAINT `fk_chitietdonmuahang_donhang` FOREIGN KEY (`madonhang`) REFERENCES `donhang`(`id`);
 
 --
 -- Các ràng buộc cho bảng `sanphamflashsale`
