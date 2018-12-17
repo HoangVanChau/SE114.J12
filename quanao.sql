@@ -1,11 +1,11 @@
-﻿-- phpMyAdmin SQL Dump
--- version 4.8.3
+-- phpMyAdmin SQL Dump
+-- version 4.8.2
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 14, 2018 lúc 05:50 AM
--- Phiên bản máy phục vụ: 10.1.37-MariaDB
--- Phiên bản PHP: 7.2.12
+-- Thời gian đã tạo: Th12 17, 2018 lúc 10:46 AM
+-- Phiên bản máy phục vụ: 10.1.34-MariaDB
+-- Phiên bản PHP: 7.2.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -50,6 +50,27 @@ CREATE TABLE `donhang` (
   `email` varchar(100) NOT NULL,
   `diachi` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `khachhang`
+--
+
+CREATE TABLE `khachhang` (
+  `id` int(11) NOT NULL,
+  `ten` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `matkhau` varchar(50) NOT NULL,
+  `flag` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Đang đổ dữ liệu cho bảng `khachhang`
+--
+
+INSERT INTO `khachhang` (`id`, `ten`, `email`, `matkhau`, `flag`) VALUES
+(1, 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', 1);
 
 -- --------------------------------------------------------
 
@@ -218,12 +239,18 @@ INSERT INTO `sanphamflashsale` (`id`, `idSanPham`) VALUES
 --
 ALTER TABLE `chitietdonmuahang`
   ADD PRIMARY KEY (`id`),
-ADD KEY `madonhang` (`madonhang`);
+  ADD KEY `madonhang` (`madonhang`);
 
 --
 -- Chỉ mục cho bảng `donhang`
 --
 ALTER TABLE `donhang`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Chỉ mục cho bảng `khachhang`
+--
+ALTER TABLE `khachhang`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -253,7 +280,13 @@ ALTER TABLE `sanphamflashsale`
 -- AUTO_INCREMENT cho bảng `donhang`
 --
 ALTER TABLE `donhang`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT cho bảng `khachhang`
+--
+ALTER TABLE `khachhang`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT cho bảng `loaisanpham`
@@ -277,8 +310,11 @@ ALTER TABLE `sanphamflashsale`
 -- Các ràng buộc cho các bảng đã đổ
 --
 
+--
+-- Các ràng buộc cho bảng `chitietdonmuahang`
+--
 ALTER TABLE `chitietdonmuahang`
-  ADD CONSTRAINT `fk_chitietdonmuahang_donhang` FOREIGN KEY (`madonhang`) REFERENCES `donhang`(`id`);
+  ADD CONSTRAINT `fk_chitietdonmuahang_donhang` FOREIGN KEY (`madonhang`) REFERENCES `donhang` (`id`);
 
 --
 -- Các ràng buộc cho bảng `sanphamflashsale`

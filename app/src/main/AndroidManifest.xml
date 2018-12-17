@@ -29,6 +29,7 @@
         <activity android:name=".activity.activity.activity.ChiTietSanPham" />
         <activity android:name=".activity.activity.activity.Giohang" />
         <activity android:name=".activity.activity.activity.Thongtinkhachhang"></activity>
+
     </application>
 
 </manifest>

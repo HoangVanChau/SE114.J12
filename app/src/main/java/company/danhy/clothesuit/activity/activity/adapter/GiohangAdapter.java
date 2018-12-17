@@ -18,6 +18,8 @@ import company.danhy.clothesuit.R;
 import company.danhy.clothesuit.activity.activity.activity.MainActivity;
 import company.danhy.clothesuit.activity.activity.model.Giohang;
 
+import static java.sql.Types.NULL;
+
 public class GiohangAdapter extends BaseAdapter {
     Context context;
     ArrayList<Giohang>arrayListgiohang;
@@ -29,7 +31,7 @@ public class GiohangAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return arrayListgiohang.size();
+        return NULL;
     }
 
     @Override

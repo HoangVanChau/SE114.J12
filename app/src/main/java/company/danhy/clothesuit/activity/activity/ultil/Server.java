@@ -3,7 +3,7 @@ package company.danhy.clothesuit.activity.activity.ultil;
 public class Server {
 
     //TriTue
-    public static String localhost ="192.168.56.1:8080";
+    public static String localhost ="192.168.1.15";
    // public static String localhost ="192.168.51.2:8080";
 
     //public static String localhost ="10.0.3.2:8080";
@@ -17,5 +17,7 @@ public class Server {
     public static String duongDanSanPhamFlashSale = "http://"+ localhost+ "/server/getsanphamflashsale.php";
     public static String duongDanThongTinKhachHang ="http://"+ localhost +"/server/thongtinkhachhang.php";
     public static String duongDanChiTietDonHang ="http://"+ localhost +"/server/chitietdonhang.php";
+    public static String signup ="http://"+ localhost +"/server/signup.php";
+    public static String sigin ="http://"+ localhost +"/server/sigin.php";
 
  }
