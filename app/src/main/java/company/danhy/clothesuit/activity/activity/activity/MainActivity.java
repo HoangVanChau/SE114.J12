@@ -1,10 +1,12 @@
 package company.danhy.clothesuit.activity.activity.activity;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -104,10 +106,38 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        String username = null,email = null;
+        User user = userLocalStore.getLoggedInUser();
+        username=user.username;
+        email=user.email;
         switch(item.getItemId()){
             case R.id.menugiohang:
                 Intent intent=new Intent(getApplicationContext(), company.danhy.clothesuit.activity.activity.activity.Giohang.class);
                 startActivity(intent);
+            case R.id.menuLogout:
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("Logout");
+                builder.setMessage("Username : "+username+"\nEmail :"+email);
+                builder.setCancelable(false);
+                builder.setPositiveButton("Trở về", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Toast.makeText(MainActivity.this, "Mời bạn tiếp tục mua sắm", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton("Logout", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //Code Logout
+                        userLocalStore.clearUserData();
+                        userLocalStore.setUserLoggedIn(false);
+                        Intent loginIntent = new Intent(getApplicationContext(), LoginActivity.class);
+                        startActivity(loginIntent);
+                        Toast.makeText(MainActivity.this, "Đăng xuất thành công", Toast.LENGTH_SHORT).show();
+                    }
+                });
+                AlertDialog alertDialog = builder.create();
+                alertDialog.show();
         }
         return super.onOptionsItemSelected(item);
     }
