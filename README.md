@@ -8,5 +8,4 @@
   - [Vũ Ngọc Duy Anh](https://www.facebook.com/d.a2029)   16520062
    ### Giảng viên hướng dẫn: Huỳnh Tuấn Anh
 
-# Shopping App 
-### Săp hoàn thành !!!
+
