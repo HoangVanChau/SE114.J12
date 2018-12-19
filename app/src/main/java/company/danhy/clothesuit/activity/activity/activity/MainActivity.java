@@ -1,4 +1,4 @@
-﻿package company.danhy.clothesuit.activity.activity.activity;
+package company.danhy.clothesuit.activity.activity.activity;
 
 import android.annotation.SuppressLint;
 import android.content.DialogInterface;
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.menugiohang:
                 Intent intent=new Intent(getApplicationContext(), company.danhy.clothesuit.activity.activity.activity.Giohang.class);
                 startActivity(intent);
-		break;
+                break;
             case R.id.menuLogout:
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setTitle("Logout");
@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
                 });
                 AlertDialog alertDialog = builder.create();
                 alertDialog.show();
-		break;
+        break;
         }
         return super.onOptionsItemSelected(item);
     }

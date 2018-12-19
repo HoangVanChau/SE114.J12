@@ -62,7 +62,7 @@ public class Thongtinkhachhang extends AppCompatActivity {
                     StringRequest stringRequest =new StringRequest(Request.Method.POST, Server.duongDanThongTinKhachHang, new Response.Listener<String>() {
                         @Override
                         public void onResponse(final String madonhang) {
-                            Log.d("madonhang",madonhang);
+                            Log.d("Madonhang",madonhang);
                             int result=0;
                             try {
                                 result= Integer.parseInt(madonhang.toString());
@@ -71,9 +71,11 @@ public class Thongtinkhachhang extends AppCompatActivity {
                             }
                             if(result>0){
                                RequestQueue queue =Volley.newRequestQueue(getApplicationContext());
-                               StringRequest request=new StringRequest(Request.Method.POST, Server.duongDanChiTietDonHang, new Response.Listener<String>() {
+                                final int finalResult = result;
+                                StringRequest request=new StringRequest(Request.Method.POST, Server.duongDanChiTietDonHang, new Response.Listener<String>() {
                                    @Override
                                    public void onResponse(String response) {
+
                                      if(response.equals("1")){
                                          MainActivity.manggiohang.clear();
                                          checkconnect.ShowToast_Short(getApplicationContext(),"Bạn đã thêm dữ liệu giỏ hàng thành công");
@@ -96,7 +98,7 @@ public class Thongtinkhachhang extends AppCompatActivity {
                                        for(int i=0;i<MainActivity.manggiohang.size();i++){
                                            JSONObject jsonObject=new JSONObject();
                                            try {
-                                               jsonObject.put("madonhang",madonhang);
+                                               jsonObject.put("madonhang", finalResult);
                                                jsonObject.put("masanpham",MainActivity.manggiohang.get(i).getIdsp());
                                                jsonObject.put("tensanpham",MainActivity.manggiohang.get(i).getTensp());
                                                jsonObject.put("giasanpham",MainActivity.manggiohang.get(i).getGiasp());
