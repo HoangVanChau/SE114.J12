@@ -22,7 +22,7 @@
         android:layout_marginTop="10dp">
 
         <EditText
-            android:id="@+id/txtName"
+            android:id="@+id/txtNameDK"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -37,7 +37,7 @@
         android:layout_marginTop="10dp">
 
         <EditText
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtEmailDK"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -52,7 +52,7 @@
         android:layout_marginTop="10dp">
 
         <EditText
-            android:id="@+id/txtPass"
+            android:id="@+id/txtPassDK"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -61,12 +61,21 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/btnDangki"
+        android:id="@+id/btnDangkiDK"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="#3498db"
+        android:text="Đăng kí"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/btnDangnhapDK"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:background="#b45705"
-        android:text="Đăng kí"
+        android:text="Đăng nhập"
         android:textColor="#fff" />
 
     <TextView

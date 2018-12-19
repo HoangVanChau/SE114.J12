@@ -18,6 +18,6 @@ public class Server {
     public static String duongDanThongTinKhachHang ="http://"+ localhost +"/server/thongtinkhachhang.php";
     public static String duongDanChiTietDonHang ="http://"+ localhost +"/server/chitietdonhang.php";
     public static String signup ="http://"+ localhost +"/server/signup.php";
-    public static String sigin ="http://"+ localhost +"/server/sigin.php";
+    public static String signin ="http://"+ localhost +"/server/signin.php";
 
  }

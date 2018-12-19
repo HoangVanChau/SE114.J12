@@ -76,7 +76,9 @@
                         <ViewFlipper
                             android:id="@+id/viewFlipper"
                             android:layout_width="match_parent"
-                            android:layout_height="150dp"></ViewFlipper>
+                            android:layout_height="150dp">
+
+                        </ViewFlipper>
 
                         <LinearLayout
                             android:layout_width="match_parent"

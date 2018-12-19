@@ -4,5 +4,8 @@
     <color name="colorPrimaryDark">#a60c0c</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorToolBar">#a60c0c</color>
-    <color name="colorToolBarTitle">#ffffff</color>
+    <color name="startblue">#ffffff</color>
+    <color name="colorToolBarTitle">#09c6df</color>
+    <color name="endblue">#0bcce6</color>
+    <color name="graylight">#D3D3D3</color>
 </resources>

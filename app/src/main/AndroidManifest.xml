@@ -28,8 +28,10 @@
         <activity android:name=".activity.activity.activity.LienHeActivity" />
         <activity android:name=".activity.activity.activity.ChiTietSanPham" />
         <activity android:name=".activity.activity.activity.Giohang" />
-        <activity android:name=".activity.activity.activity.Thongtinkhachhang"></activity>
-
+        <activity android:name=".activity.activity.activity.Thongtinkhachhang" />
+        <activity android:name=".activity.activity.activity.LoginActivity" />
+        <activity android:name=".activity.activity.activity.RegisterActivity" />
+        <activity android:name=".activity.activity.activity.ProfileActivity"></activity>
     </application>
 
 </manifest>

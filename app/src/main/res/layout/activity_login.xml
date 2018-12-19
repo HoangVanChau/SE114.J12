@@ -63,7 +63,7 @@
                     android:drawableLeft="@drawable/lock"
                     android:drawableTint="#FF4081"
                     android:hint="Mật khẩu"
-                    android:inputType="numberPassword"
+                    android:inputType="textPassword"
                     android:singleLine="true" />
             </android.support.design.widget.TextInputLayout>
 
@@ -82,6 +82,16 @@
                 android:layout_margin="22dp"
                 android:background="#d67601"
                 android:text="Đăng nhập"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+            <Button
+                android:id="@+id/btnDangki"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:background="#3498db"
+                android:text="Đăng kí"
                 android:textAllCaps="false"
                 android:textColor="#fff"
                 android:textSize="18sp" />

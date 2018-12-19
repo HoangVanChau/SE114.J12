@@ -2,8 +2,6 @@ package company.danhy.clothesuit.activity.activity.activity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -16,7 +14,6 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -25,6 +22,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 
@@ -70,12 +69,18 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Sanpham> mangSanPhamFlashSale;
     SanphamAdapter sanphamAdapter;
 
+    UserLocalStore userLocalStore;
+
     SanPhamFlashSaleAdapter sanPhamFlashSaleAdapter;
+
+
+
     public static ArrayList<Giohang>manggiohang;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        userLocalStore  = new UserLocalStore(this);
 
         AnhXa();
         if(checkconnect.isNetworkAvailable(getApplicationContext())){
@@ -107,6 +112,34 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if (authenticate() == true) {
+            displayUserDetails();
+//            userLocalStore.clearUserData();
+//            userLocalStore.setUserLoggedIn(false);
+//            Intent loginIntent = new Intent(this, LoginActivity.class);
+//            startActivity(loginIntent);
+        }
+    }
+
+    private boolean authenticate() {
+        if (userLocalStore.getLoggedInUser() == null) {
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+            return false;
+        }
+        return true;
+    }
+
+    private void displayUserDetails() {
+        User user = userLocalStore.getLoggedInUser();
+        Toast.makeText(getApplicationContext(),
+                 user.username,
+                Toast.LENGTH_SHORT).show();
+
+    }
 
 
     private void catOnItemListView() {
