@@ -63,7 +63,13 @@ public class Thongtinkhachhang extends AppCompatActivity {
                         @Override
                         public void onResponse(final String madonhang) {
                             Log.d("madonhang",madonhang);
-                            if(Integer.parseInt(madonhang)>0){
+                            int result=0;
+                            try {
+                                result= Integer.parseInt(madonhang.toString());
+                            } catch(NumberFormatException nfe) {
+                                System.out.println("Could not parse " + nfe);
+                            }
+                            if(result>0){
                                RequestQueue queue =Volley.newRequestQueue(getApplicationContext());
                                StringRequest request=new StringRequest(Request.Method.POST, Server.duongDanChiTietDonHang, new Response.Listener<String>() {
                                    @Override

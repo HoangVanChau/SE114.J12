@@ -31,7 +31,7 @@ public class GiohangAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
-        return NULL;
+        return arrayListgiohang.size();
     }
 
     @Override
