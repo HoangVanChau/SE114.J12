@@ -40,7 +40,7 @@
  </p>
 ### Danh sách các sản phẩm có ở app
  <p align="center">
-<img src="ListProduct.PNG" height = "480" width="270">
+<img src="ListProduct.PNG" height = "520" width="300">
  </p>
 ### Xem danh sách từng sản phẩm
   <p align="center">
@@ -52,11 +52,11 @@
  </p>
 ### Danh sách các sản phẩm của khách hàng đặt mua
   <p align="center">
- <img src="ListBuy.PNG" height = "480" width="270">
+ <img src="ListBuy.PNG" height = "520" width="300">
  </p>
 ### Màn hình xác nhận thông tin khách hàng mua hàng
    <p align="center">
- <img src="customer.PNG" height = "480" width="270">
+ <img src="customer.PNG" height = "520" width="300">
  </p>
  
  
