@@ -46,11 +46,11 @@
  </p>
  ## Xem danh sách từng sản phẩm
   <p align="center">
- <img src="imageReview/veryProductGiay.PNG" height = "480" width="270"><img src="imageReview/EveryProductNon.PNG" height = "480" width="270">
+ <img src="imageReview/everyProductGiay.PNG" height = "480" width="270"><img src="imageReview/EveryProductNon.PNG" height = "480" width="270">
  </p>
  ## Thông tin từng sản phẩm
   <p align="center">
- <img src="imageReview/everyProductGiay.PNG" height = "480" width="270"> <img src="imageReview/infiQuan.PNG" height = "480" width="270">
+ <img src="imageReview/infoGiay.PNG" height = "480" width="270"> <img src="imageReview/infiQuan.PNG" height = "480" width="270">
  </p>
  ## Danh sách các sản phẩm của khách hàng đặt mua
   <p align="center">
