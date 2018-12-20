@@ -29,9 +29,9 @@
  ## GIAO DIỆN CỦA ỨNG DỤNG
  1. [Các chức năng của ứng dụng](#chức-năng)
     1. [Đăng nhập / Đăng kí](#đăng-nhập-/-đăng-kí)
-    1. [Xem danh sách các sản phẩm có ở app](#Xem-danh-sách-các-sản-phẩm-có-trong-app)
-    1. [Xem danh sách từng sản phẩm](#xem-danh-sách-từng-sản-phẩm)
-    1. [Thông tin từng sản phẩm](#thông-tin-từng-sản-phẩm)
+    1. [Danh sách các sản phẩm có ở app](#Danh-sách-các-sản-phẩm-có-trong-app)
+    1. [Danh sách từng sản phẩm](#Danh-sách-từng-sản-phẩm)
+    1. [Thông tin từng sản phẩm](#Thông-tin-từng-sản-phẩm)
     1. [Danh sách các sản phẩm của khách hàng đặt mua](#Danh-sách-các-sản-phẩm-của-khách-hàng-đặt-mua)
     1. [Màn hình xác nhận thông tin khách hàng mua hàng](#Màn-hình-xác-nhận-thông-tin-khách-hàng-mua-hàng)
     
@@ -42,7 +42,7 @@
 
  ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
 
-### Xem danh sách các sản phẩm có ở app
+### Danh sách các sản phẩm có ở app
  <p align="center">
  ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
  </p>
