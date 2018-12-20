@@ -41,11 +41,11 @@ public class Thongtinkhachhang extends AppCompatActivity {
                 finish();
             }
         });
-        if(checkconnect.isNetworkAvailable(Thongtinkhachhang.this)){
+        if(checkconnect.isNetworkAvailable(getApplicationContext())){
             eventButton();
         }
         else{
-            checkconnect.ShowToast_Short(Thongtinkhachhang.this,"Bạn hãy kiểm tra lại kết nối");
+            checkconnect.ShowToast_Short(getApplicationContext(),"Bạn hãy kiểm tra lại kết nối");
         }
     }
 
@@ -53,34 +53,29 @@ public class Thongtinkhachhang extends AppCompatActivity {
         btxacnhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String ten=edtenkhachhang.getText().toString().trim();
-                final String sdt=edsdt.getText().toString().trim();
-                final String email=edemail.getText().toString().trim();
-                final String diachi=eddiachi.getText().toString().trim();
-                if(ten.length()>0 && sdt.length()>0 && email.length()>0 && diachi.length()>0){
-                    RequestQueue requestQueue =Volley.newRequestQueue(Thongtinkhachhang.this);
-                    StringRequest stringRequest =new StringRequest(Request.Method.POST, Server.duongDanThongTinKhachHang, new Response.Listener<String>() {
+                final String Name = edtenkhachhang.getText().toString().trim();
+                final String Phone = edsdt.getText().toString().trim();
+                final String email = edemail.getText().toString().trim();
+                final String Address = edemail.getText().toString().trim();
+                if(Name.length()>0&& Phone.length()>0&&email.length()>0 && Address.length()>0){
+                    RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
+                    StringRequest stringRequest = new StringRequest(Request.Method.POST, Server.duongDanThongTinKhachHang, new Response.Listener<String>() {
                         @Override
                         public void onResponse(final String madonhang) {
                             Log.d("Madonhang",madonhang);
-
-                            //lay cai ma don hang cuoi cung sqlsever
-                            if(Integer.parseInt(madonhang)>0)
-                            {
-                                RequestQueue queue =Volley.newRequestQueue(Thongtinkhachhang.this);
-                                StringRequest request=new StringRequest(Request.Method.POST, Server.duongDanChiTietDonHang, new Response.Listener<String>() {
+                                RequestQueue queue = Volley.newRequestQueue(getApplicationContext());
+                                StringRequest request = new StringRequest(Request.Method.POST, Server.duongDanChiTietDonHang, new Response.Listener<String>() {
                                     @Override
                                     public void onResponse(String response) {
-                                        Log.d("RESPONSE",response.toString());
-                                        if(response.equals("1")){
+                                        Log.d("test",response);
+                                        if(response!=null) {
                                             MainActivity.manggiohang.clear();
-                                            //checkconnect.ShowToast_Short(Thongtinkhachhang.this,"Bạn đã thêm dữ liệu giỏ hàng thành công");
-                                            Intent intent =new Intent(Thongtinkhachhang.this,MainActivity.class);
+                                            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
                                             startActivity(intent);
-                                            //checkconnect.ShowToast_Short(Thongtinkhachhang.this,"Mời bạn tiếp tục mua hàng");
+                                            checkconnect.ShowToast_Short(getApplicationContext(),"Moi ban tiep tuc mua sam");
+                                            checkconnect.ShowToast_Short(getApplicationContext(),"Ban da them du lieu gio hang thanh cong");
                                         }else{
-
-                                            checkconnect.ShowToast_Short(Thongtinkhachhang.this,"Dữ liệu giỏ hàng của bạn đã bị lỗi");
+                                            checkconnect.ShowToast_Short(getApplicationContext(),"Du lieu gio hang da bi loi");
                                         }
                                     }
                                 }, new Response.ErrorListener() {
@@ -91,31 +86,30 @@ public class Thongtinkhachhang extends AppCompatActivity {
                                 }){
                                     @Override
                                     protected Map<String, String> getParams() throws AuthFailureError {
-                                        JSONArray jsonArray=new JSONArray();
-                                        for(int i=0;i<MainActivity.manggiohang.size();i++){
-                                            JSONObject jsonObject=new JSONObject();
+                                        JSONArray jsonArray = new JSONArray();
+                                        for(int i=0;i<MainActivity.manggiohang.size();i++)
+                                        {
+                                            JSONObject jsonObject = new JSONObject();
                                             try {
-                                                jsonObject.put("madonhang", Integer.parseInt(madonhang));
+                                                jsonObject.put("madonhang",130);
                                                 jsonObject.put("masanpham",MainActivity.manggiohang.get(i).getIdsp());
                                                 jsonObject.put("tensanpham",MainActivity.manggiohang.get(i).getTensp());
                                                 jsonObject.put("giasanpham",MainActivity.manggiohang.get(i).getGiasp());
                                                 jsonObject.put("soluongsanpham",MainActivity.manggiohang.get(i).getSoluongsp());
+
                                             } catch (JSONException e) {
                                                 e.printStackTrace();
                                             }
                                             jsonArray.put(jsonObject);
                                         }
-                                        HashMap<String,String> hashMap=new HashMap<String,String>();
+                                        HashMap<String,String> hashMap = new HashMap<String, String>();
                                         hashMap.put("json",jsonArray.toString());
                                         return hashMap;
                                     }
                                 };
                                 queue.add(request);
                             }
-                            }
-
-
-                        }, new Response.ErrorListener() {
+                    }, new Response.ErrorListener() {
                         @Override
                         public void onErrorResponse(VolleyError error) {
 
@@ -123,17 +117,18 @@ public class Thongtinkhachhang extends AppCompatActivity {
                     }){
                         @Override
                         protected Map<String, String> getParams() throws AuthFailureError {
-                            HashMap<String,String> hashMap=new HashMap<String,String>();
-                            hashMap.put("tenkhachhang",ten);
-                            hashMap.put("sodienthoai",sdt);
+                            HashMap<String,String> hashMap= new HashMap<String,String>();
+                            hashMap.put("tenkhachhang",Name);
+                            hashMap.put("sodienthoai",Phone);
                             hashMap.put("email",email);
-                            hashMap.put("diachi",diachi);
+                            hashMap.put("diachi",Address);
                             return hashMap;
                         }
                     };
                     requestQueue.add(stringRequest);
+
                 }else{
-                    checkconnect.ShowToast_Short(Thongtinkhachhang.this,"Bạn chưa nhập đủ thông tin");
+                    checkconnect.ShowToast_Short(getApplicationContext(),"Kiem Tra Lai Du Lieu");
                 }
             }
         });
