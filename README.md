@@ -18,49 +18,42 @@
   - Visual Studio Code PHP
  ## CÁC CHỨC NĂNG CHÍNH:
   - Đăng kí tài khoản, đăng nhập
-  - Xem danh sách các loại sản phẩm trong shop 
-  - xem chi tiết thông tin sản phẩm 
+  - Danh sách các loại sản phẩm trong app 
+  - Xem danh sách từng sản phẩm
+  - Thông tin từng sản phẩm
   - Thông tin khách hàng
-  - Mua hàng và xác nhận thông tin khách hàng mua hàng
-  - Thanh toán giỏ hàng và tiếp tục mua hàng
+  - Danh sách các sản phẩm của khách hàng đặt mua
+  - Màn hình xác nhận thông tin khách hàng mua hàng
  ## MÔI TRƯỜNG CÀI ĐẶT
   - 
  
- ## GIAO DIỆN CỦA ỨNG DỤNG
- 1. [Các chức năng của ứng dụng](#chức-năng)
-    1. [Đăng nhập / Đăng kí](#đăng-nhập-/-đăng-kí)
-    1. [Danh sách các sản phẩm có ở app](#Danh-sách-các-sản-phẩm-có-trong-app)
-    1. [Danh sách từng sản phẩm](#Danh-sách-từng-sản-phẩm)
-    1. [Thông tin từng sản phẩm](#Thông-tin-từng-sản-phẩm)
-    1. [Danh sách các sản phẩm của khách hàng đặt mua](#Danh-sách-các-sản-phẩm-của-khách-hàng-đặt-mua)
-    1. [Màn hình xác nhận thông tin khách hàng mua hàng](#Màn-hình-xác-nhận-thông-tin-khách-hàng-mua-hàng)
-    
+ ## GIAO DIỆN CỦA ỨNG DỤNG  
 ## Các chức năng của ứng dụng
 ### Đăng nhập / Đăng kí
  - Đăng nhập
  - Đăng kí
-
- ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
-
+ <p align="center">
+ <img src="ManHinh/dangnhap.png" height = "480" width="270"><img src="ManHinh/dangki.png" height = "480" width="270">
+ </p>
 ### Danh sách các sản phẩm có ở app
  <p align="center">
- ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+<img src="ManHinh/ListProduct.png" height = "480" width="270">
  </p>
  ### Xem danh sách từng sản phẩm
   <p align="center">
- ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ <img src="ManHinh/EveryProductGiay.png" height = "480" width="270"><img src="ManHinh/EveryProductNon.png" height = "480" width="270">
  </p>
  ### Thông tin từng sản phẩm
   <p align="center">
- ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ <img src="ManHinh/infoGiay.png" height = "480" width="270"> <img src="ManHinh/infoQuan.png" height = "480" width="270">
  </p>
  ### Danh sách các sản phẩm của khách hàng đặt mua
   <p align="center">
- ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ <img src="ManHinh/ListBuy.png" height = "480" width="270">
  </p>
  ### Màn hình xác nhận thông tin khách hàng mua hàng
    <p align="center">
- ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ <img src="ManHinh/customer.png" height = "480" width="270">
  </p>
  
  
