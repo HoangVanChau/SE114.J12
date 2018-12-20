@@ -1,0 +1,299 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+MERGED from [com.android.support:design:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\068974019e9223709d56cba1e76d3af9\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\02a2fedf26a6581204ba15e409dcbe6e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e022534c90dc3817b61c663556ea7a2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\acb8d4a0c7b26a30b255b300802194b6\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\0837f56a6abd3bc6b48956f0a0cd9a97\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:17:1-32:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3a73ace8a51f802a2acfc4dfd2050817\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\exifinterface-28.0.0.aar\22ac4adc261171830bc2bd40d138e061\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4c5cda19fbb9be45c494fa59759212f3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\a53e40b35318a3cea97be00b7e4f663d\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\2d90ad636d373c4c508c4601e64ab4b8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\ba755a9e5329cbb98e89b85ce977e0c1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\4a19a2dcbb32a863cc8c085e0900fbe8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\a724c0df7e72e44821161ac1ff3582be\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\78dce5f3d6c763898970fe6fce0d80ec\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\6f80ec6f776899ce0fd1c71865a76875\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\1da5c759716b38b08f96abdbb8a0dcda\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c6c25282bd478edf8f8e5aab7bc36ca2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b5db8b1fe4da46735891e3e1534b789e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\804c7153875821ef35a8d6203c7fba2e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\cfe43784dccc43038bec20e2ae121e2e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\df9ad230ab4fc4adf3bb31b9b9886712\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\546cd26eecfa5230ef22bf05ae8670d1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\55c3478ea0837548b9be1bbe3d9bc743\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\78231871f24b9ee31c5384f3ff63f184\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\883416955529c367d43dcc99b724a9a1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\de772f4e9cfae504347483c7cc975d48\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5fc6707618ff355184766ce4d9358a4b\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\56c7b317155b159f81cd04e629ca1468\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\7dcae45949ec59e441805a0d6d2eda68\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\82ea7c3b339a24911443f6f61936cc3f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\4722f5690327178c54f7a6b1e3552b5a\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\8557d1ce5100d42d30965d368eb4f435\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\d64502070e407225ede0828aa845df31\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\40cebbd6f8413c4e6aa563e1ff30fc31\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\54e2c719f1b306688b205d9606d5d0e1\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2734fc4b748668cab3402f71223af93e\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+	package
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:3:5-39
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:1-37:12
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:5:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:6:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:6:22-76
+application
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:8:5-35:19
+MERGED from [com.android.support:design:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\068974019e9223709d56cba1e76d3af9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\068974019e9223709d56cba1e76d3af9\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e022534c90dc3817b61c663556ea7a2\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e022534c90dc3817b61c663556ea7a2\AndroidManifest.xml:9:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:7:5-12:19
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\acb8d4a0c7b26a30b255b300802194b6\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\acb8d4a0c7b26a30b255b300802194b6\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\a53e40b35318a3cea97be00b7e4f663d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\a53e40b35318a3cea97be00b7e4f663d\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\883416955529c367d43dcc99b724a9a1\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\883416955529c367d43dcc99b724a9a1\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\de772f4e9cfae504347483c7cc975d48\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\de772f4e9cfae504347483c7cc975d48\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\883416955529c367d43dcc99b724a9a1\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:13:9-35
+	android:label
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:11:9-35
+	android:roundIcon
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:12:9-54
+	android:icon
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:10:9-43
+	android:allowBackup
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:9:9-35
+	android:theme
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:14:9-40
+activity#company.danhy.clothesuit.activity.activity.activity.MainActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:15:9-21:20
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:15:19-74
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:16:13-20:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:17:17-69
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:17:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:19:17-77
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:19:27-74
+activity#company.danhy.clothesuit.activity.activity.activity.GiayActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:22:9-77
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:22:19-74
+activity#company.danhy.clothesuit.activity.activity.activity.NonActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:23:9-76
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:23:19-73
+activity#company.danhy.clothesuit.activity.activity.activity.AoActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:24:9-75
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:24:19-72
+activity#company.danhy.clothesuit.activity.activity.activity.QuanActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:25:9-77
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:25:19-74
+activity#company.danhy.clothesuit.activity.activity.activity.DepActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:26:9-76
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:26:19-73
+activity#company.danhy.clothesuit.activity.activity.activity.ThongTinActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:27:9-81
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:27:19-78
+activity#company.danhy.clothesuit.activity.activity.activity.LienHeActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:28:9-79
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:28:19-76
+activity#company.danhy.clothesuit.activity.activity.activity.ChiTietSanPham
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:29:9-79
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:29:19-76
+activity#company.danhy.clothesuit.activity.activity.activity.Giohang
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:30:9-72
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:30:19-69
+activity#company.danhy.clothesuit.activity.activity.activity.Thongtinkhachhang
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:31:9-82
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:31:19-79
+activity#company.danhy.clothesuit.activity.activity.activity.LoginActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:32:9-78
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:32:19-75
+activity#company.danhy.clothesuit.activity.activity.activity.RegisterActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:33:9-81
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:33:19-78
+activity#company.danhy.clothesuit.activity.activity.activity.ProfileActivity
+ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:34:9-89
+	android:name
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml:34:19-77
+uses-sdk
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\068974019e9223709d56cba1e76d3af9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\068974019e9223709d56cba1e76d3af9\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\02a2fedf26a6581204ba15e409dcbe6e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\02a2fedf26a6581204ba15e409dcbe6e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e022534c90dc3817b61c663556ea7a2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.3.aar\0e022534c90dc3817b61c663556ea7a2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:5:5-44
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\acb8d4a0c7b26a30b255b300802194b6\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\volley-1.1.1.aar\acb8d4a0c7b26a30b255b300802194b6\AndroidManifest.xml:7:5-43
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\0837f56a6abd3bc6b48956f0a0cd9a97\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\cardview-v7-28.0.0.aar\0837f56a6abd3bc6b48956f0a0cd9a97\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3a73ace8a51f802a2acfc4dfd2050817\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-28.0.0.aar\3a73ace8a51f802a2acfc4dfd2050817\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\exifinterface-28.0.0.aar\22ac4adc261171830bc2bd40d138e061\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\exifinterface-28.0.0.aar\22ac4adc261171830bc2bd40d138e061\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4c5cda19fbb9be45c494fa59759212f3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-28.0.0.aar\4c5cda19fbb9be45c494fa59759212f3\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\a53e40b35318a3cea97be00b7e4f663d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-tasks-16.0.1.aar\a53e40b35318a3cea97be00b7e4f663d\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\2d90ad636d373c4c508c4601e64ab4b8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-v4-28.0.0.aar\2d90ad636d373c4c508c4601e64ab4b8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\ba755a9e5329cbb98e89b85ce977e0c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-media-compat-28.0.0.aar\ba755a9e5329cbb98e89b85ce977e0c1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\4a19a2dcbb32a863cc8c085e0900fbe8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-fragment-28.0.0.aar\4a19a2dcbb32a863cc8c085e0900fbe8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\a724c0df7e72e44821161ac1ff3582be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-core-ui-28.0.0.aar\a724c0df7e72e44821161ac1ff3582be\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\78dce5f3d6c763898970fe6fce0d80ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-core-utils-28.0.0.aar\78dce5f3d6c763898970fe6fce0d80ec\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\6f80ec6f776899ce0fd1c71865a76875\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-28.0.0.aar\6f80ec6f776899ce0fd1c71865a76875\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\1da5c759716b38b08f96abdbb8a0dcda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\transition-28.0.0.aar\1da5c759716b38b08f96abdbb8a0dcda\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c6c25282bd478edf8f8e5aab7bc36ca2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\loader-28.0.0.aar\c6c25282bd478edf8f8e5aab7bc36ca2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b5db8b1fe4da46735891e3e1534b789e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\viewpager-28.0.0.aar\b5db8b1fe4da46735891e3e1534b789e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\804c7153875821ef35a8d6203c7fba2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-28.0.0.aar\804c7153875821ef35a8d6203c7fba2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\cfe43784dccc43038bec20e2ae121e2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\drawerlayout-28.0.0.aar\cfe43784dccc43038bec20e2ae121e2e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\df9ad230ab4fc4adf3bb31b9b9886712\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-28.0.0.aar\df9ad230ab4fc4adf3bb31b9b9886712\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\546cd26eecfa5230ef22bf05ae8670d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\customview-28.0.0.aar\546cd26eecfa5230ef22bf05ae8670d1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\55c3478ea0837548b9be1bbe3d9bc743\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-28.0.0.aar\55c3478ea0837548b9be1bbe3d9bc743\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\78231871f24b9ee31c5384f3ff63f184\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-28.0.0.aar\78231871f24b9ee31c5384f3ff63f184\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\883416955529c367d43dcc99b724a9a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\883416955529c367d43dcc99b724a9a1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\de772f4e9cfae504347483c7cc975d48\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\versionedparcelable-28.0.0.aar\de772f4e9cfae504347483c7cc975d48\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5fc6707618ff355184766ce4d9358a4b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\cursoradapter-28.0.0.aar\5fc6707618ff355184766ce4d9358a4b\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\56c7b317155b159f81cd04e629ca1468\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\56c7b317155b159f81cd04e629ca1468\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\7dcae45949ec59e441805a0d6d2eda68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\documentfile-28.0.0.aar\7dcae45949ec59e441805a0d6d2eda68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\82ea7c3b339a24911443f6f61936cc3f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-28.0.0.aar\82ea7c3b339a24911443f6f61936cc3f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\4722f5690327178c54f7a6b1e3552b5a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\print-28.0.0.aar\4722f5690327178c54f7a6b1e3552b5a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\8557d1ce5100d42d30965d368eb4f435\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.1.aar\8557d1ce5100d42d30965d368eb4f435\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\d64502070e407225ede0828aa845df31\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\interpolator-28.0.0.aar\d64502070e407225ede0828aa845df31\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\40cebbd6f8413c4e6aa563e1ff30fc31\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\40cebbd6f8413c4e6aa563e1ff30fc31\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\54e2c719f1b306688b205d9606d5d0e1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\54e2c719f1b306688b205d9606d5d0e1\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2734fc4b748668cab3402f71223af93e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\2734fc4b748668cab3402f71223af93e\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\DanhyPC\Desktop\SE114.J12---AppBanHang\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\4bbdfea8f221c569a0ac83c7f6570356\AndroidManifest.xml:9:13-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-maps-16.0.0.aar\62b9eaab7f6013e57d85b356eb4338d7\AndroidManifest.xml:28:9-32
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-base-16.0.1.aar\58abf66b075919d440e89918a4fde95a\AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] C:\Users\DanhyPC\.gradle\caches\transforms-1\files-1.1\play-services-basement-16.0.1.aar\d81d25c3f04db8b61ddebcfae6c2a19f\AndroidManifest.xml:24:13-58
