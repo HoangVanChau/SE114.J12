@@ -1,0 +1,28 @@
+{
+  "files.exclude": {
+    "__error": "Not found",
+    ".vscode": true,
+    "application\\cache": true,
+    "application\\core": true,
+    "application\\helpers": true,
+    "application\\hooks": true,
+    "application\\language": true,
+    "application\\libraries": true,
+    "application\\logs": true,
+    "application\\third_party": true,
+    "system": true,
+    "tests": true,
+    "user_guide": true,
+    ".editorconfig": true,
+    ".gitignore": true,
+    ".htaccess": true,
+    "composer.json": true,
+    "contributing.md": true,
+    "index.php": true,
+    "license.txt": true,
+    "readme.rst": true,
+    "application\\.htaccess": true,
+    "application\\index.html": true,
+    "application\\views\\errors": true
+  }
+}
