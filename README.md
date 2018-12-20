@@ -1,6 +1,6 @@
- ﻿ <p align="center">
-  ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
-  <p/>
+ ﻿
+   ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+   
    # TÊN ĐỀ TÀI: *SHOPPING APP*
 ## THÔNG TIN NHÓM:
    ### Tên nhóm: *FireFox*
