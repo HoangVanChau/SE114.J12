@@ -29,7 +29,43 @@
  ## GIAO DIỆN CỦA ỨNG DỤNG
  I. [Các chức năng của ứng dụng](#chức-năng)
     1. [Đăng nhập / Đăng kí](#đăng-nhập-/-đăng-kí)
-    1. [Xem danh sách các sản phẩm có ở app](#xem-danh-sách-các-sản-phẩm-có-trong-app)
+    2. [Xem danh sách các sản phẩm có ở app](#Xem-danh-sách-các-sản-phẩm-có-trong-app)
+    3. [Xem danh sách từng sản phẩm](#xem-danh-sách-từng-sản-phẩm)
+    4.[Thông tin từng sản phẩm](#thông-tin-từng-sản-phẩm)
+    5.[Danh sách các sản phẩm của khách hàng đặt mua](#Danh-sách-các-sản-phẩm-của-khách-hàng-đặt-mua)
+    6.[Màn hình xác nhận thông tin khách hàng mua hàng](#Màn-hình-xác-nhận-thông-tin-khách-hàng-mua-hàng)
+    
+## Các chức năng của ứng dụng
+### Đăng nhập / Đăng kí
+ - Đăng nhập
+ - Đăng kí
+ <p align="center">
+ ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ </p>
+### Xem danh sách các sản phẩm có ở app
+ <p align="center">
+ ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ </p>
+ ### Xem danh sách từng sản phẩm
+  <p align="center">
+ ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ </p>
+ ### Thông tin từng sản phẩm
+  <p align="center">
+ ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ </p>
+ ### Danh sách các sản phẩm của khách hàng đặt mua
+  <p align="center">
+ ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ </p>
+ ### Màn hình xác nhận thông tin khách hàng mua hàng
+   <p align="center">
+ ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
+ </p>
+ 
+ 
+ 
+ 
 
 
 
