@@ -35,23 +35,27 @@
  <p align="center">
  <img src="dangnhap.PNG" height = "480" width="270"><img src="dangki.PNG" height = "480" width="270">
  </p>
-### Danh sách các sản phẩm có ở app
+   ### Giao diện màn hình chính
+   <p align="center">
+<img src="giaodien.PNG" height = "480" width="270">
+ </p>
+   ### Danh sách các sản phẩm có ở app
  <p align="center">
 <img src="ListProduct.PNG" height = "480" width="270">
  </p>
- ### Xem danh sách từng sản phẩm
+   ### Xem danh sách từng sản phẩm
   <p align="center">
  <img src="EveryProductGiay.PNG" height = "480" width="270"><img src="EveryProductNon.PNG" height = "480" width="270">
  </p>
- ### Thông tin từng sản phẩm
+   ### Thông tin từng sản phẩm
   <p align="center">
- <img src="infoGiay.PNG" height = "480" width="270"> <img src="infoQuan.PNG" height = "480" width="270">
+ <img src="infoGiay.PNG" height = "480" width="270"> <img src="infiQuan.PNG" height = "480" width="270">
  </p>
- ### Danh sách các sản phẩm của khách hàng đặt mua
+   ### Danh sách các sản phẩm của khách hàng đặt mua
   <p align="center">
  <img src="ListBuy.PNG" height = "480" width="270">
  </p>
- ### Màn hình xác nhận thông tin khách hàng mua hàng
+   ### Màn hình xác nhận thông tin khách hàng mua hàng
    <p align="center">
  <img src="customer.PNG" height = "480" width="270">
  </p>
