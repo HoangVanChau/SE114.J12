@@ -1,12 +1,12 @@
  ﻿ ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
-   # TÊN ĐỀ TÀI: SHOPPING APP
+   # TÊN ĐỀ TÀI: *SHOPPING APP*
 ## THÔNG TIN NHÓM:
-   ### Tên nhóm: FireFox
+   ### Tên nhóm: *FireFox*
    ### Thành viên nhóm:
-   - [Hoàng Văn Châu](https://www.facebook.com/chau.ducgiang) 16520108
-  - [Dương Trí Tuệ](https://www.facebook.com/duong.tritue.9) 16521390
-  - [Vũ Ngọc Duy Anh](https://www.facebook.com/d.a2029)   16520062
-   ### Giảng viên hướng dẫn: Huỳnh Tuấn Anh
+   - [*Hoàng Văn Châu*](https://www.facebook.com/chau.ducgiang) 16520108
+  - [*Dương Trí Tuệ*](https://www.facebook.com/duong.tritue.9) 16521390
+  - [*Vũ Ngọc Duy Anh*](https://www.facebook.com/d.a2029)   16520062
+   ### Giảng viên hướng dẫn: *Huỳnh Tuấn Anh*
 ## ĐẶT VẤN ĐỀ
  - Do nhu cầu mua sắm của người Việt ngày càng tăng cao, nhằm nâng cao chất lượng mua sắm và thuận tiện nhất cho người dùng. Chúng tôi đã thiết kế app bán hàng online cho khách hàng, để khách hàng sử dụng và mua hàng online ngay tại nhà và bất cứ nỡi đâu cũng có thể mua được.
  - Để tránh tình trạng chen lấn, xô đẩy, mệt mỏi vào các dip tết, ngày lễ, ngày nghỉ khi shop đăng thông tin giảm giá. Nhằm cải thiện vấn đề nan giải này, đó cũng là mục đích khi chúng tôi thiết kế app này.
@@ -39,9 +39,9 @@
 ### Đăng nhập / Đăng kí
  - Đăng nhập
  - Đăng kí
- <p align="center">
+
  ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
- </p>
+
 ### Xem danh sách các sản phẩm có ở app
  <p align="center">
  ![alt text](https://www.uit.edu.vn/sites/vi/files/banner.png)
