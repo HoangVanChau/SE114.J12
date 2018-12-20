@@ -33,27 +33,27 @@
  - Đăng nhập
  - Đăng kí
  <p align="center">
- <img src="dangnhap.png" height = "480" width="270"><img src="dangki.png" height = "480" width="270">
+ <img src="dangnhap.PNG" height = "480" width="270"><img src="dangki.PNG" height = "480" width="270">
  </p>
 ### Danh sách các sản phẩm có ở app
  <p align="center">
-<img src="ListProduct.png" height = "480" width="270">
+<img src="ListProduct.PNG" height = "480" width="270">
  </p>
  ### Xem danh sách từng sản phẩm
   <p align="center">
- <img src="EveryProductGiay.png" height = "480" width="270"><img src="EveryProductNon.png" height = "480" width="270">
+ <img src="EveryProductGiay.PNG" height = "480" width="270"><img src="EveryProductNon.PNG" height = "480" width="270">
  </p>
  ### Thông tin từng sản phẩm
   <p align="center">
- <img src="infoGiay.png" height = "480" width="270"> <img src="infoQuan.png" height = "480" width="270">
+ <img src="infoGiay.PNG" height = "480" width="270"> <img src="infoQuan.PNG" height = "480" width="270">
  </p>
  ### Danh sách các sản phẩm của khách hàng đặt mua
   <p align="center">
- <img src="ListBuy.png" height = "480" width="270">
+ <img src="ListBuy.PNG" height = "480" width="270">
  </p>
  ### Màn hình xác nhận thông tin khách hàng mua hàng
    <p align="center">
- <img src="customer.png" height = "480" width="270">
+ <img src="customer.PNG" height = "480" width="270">
  </p>
  
  
