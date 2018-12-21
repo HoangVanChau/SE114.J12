@@ -74,13 +74,17 @@
    <img src="imageReview/chitietdonhang.PNG" height = "282" width="1228">
  </p>
  
-   ### *MÔ TẢ*
+   ### Mô tả thông tin khách hàng khi đặt hàng
    
   - Id trong bảng 'donhang' sẽ được tự động tạo khi khách hàng nhấn button xác nhận để thanh toán đơn hàng
   - Thông tin của khách hàng sẽ được hệ thống tự động cập nhật lên Server
   - Thông tin chi tiết các sản phẩm mà khách hàng mua cũng được hệ thống cập nhật lên bảng 'chitietdonmuahang' thông qua khóa của bảng là 'madonhang'.
   - 'Id' là khóa chính trong bảng 'donhang', 'madonhang' là khóa ngoại trong bảng 'chitietdonmuahang'
   - Thông qua 'Id' và 'madonhang' chủ cửa hàng sẽ biết được khách hàng nào đặt sản phẩm nào và đưa đến đúng địa chỉ mà khách hàng đã đặt.
+  
+  ### Tài liệu tham khảo
+  - Trung tâm tin học khoa phạm
+  - https://www.mkyong.com 
  
  
  
