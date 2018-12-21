@@ -60,6 +60,11 @@
    <p align="center">
  <img src="imageReview/customer.PNG" height = "520" width="300">
  </p>
+ ### Danh sách khách hàng đặt mua và chi tiết đơn hàng
+ <p align="center">
+ <img src="imageReview/donhang.PNG" height = "520" width="300">
+   <img src="imageReview/chitietdonhang.PNG" height = "520" width="300">
+ </p>
  
  
  
