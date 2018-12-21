@@ -30,33 +30,33 @@
  
  
  ## GIAO DIỆN CỦA ỨNG DỤNG  
-### Đăng nhập / Đăng kí
+ ### Đăng nhập / Đăng kí
  - Đăng nhập
  - Đăng kí
  <p align="center">
  <img src="imageReview/dangnhap.PNG" height = "480" width="270"><img src="imageReview/dangki.PNG" height = "480" width="270">
  </p>
- ## Giao diện màn hình chính
+ ### Giao diện màn hình chính
    <p align="center">
 <img src="imageReview/giaodien.PNG" height = "480" width="270">
  </p>
- ## Danh sách các sản phẩm có ở app
+ ### Danh sách các sản phẩm có ở app
  <p align="center">
 <img src="imageReview/ListProduct.PNG" height = "520" width="300">
  </p>
- ## Xem danh sách từng sản phẩm
+ ### Xem danh sách từng sản phẩm
   <p align="center">
  <img src="imageReview/EveryProductGiay.PNG" height = "480" width="270"><img src="imageReview/EveryProductNon.PNG" height = "480" width="270">
  </p>
- ## Thông tin từng sản phẩm
+ ### Thông tin từng sản phẩm
   <p align="center">
  <img src="imageReview/infoGiay.PNG" height = "480" width="270"> <img src="imageReview/infiQuan.PNG" height = "480" width="270">
  </p>
- ## Danh sách các sản phẩm của khách hàng đặt mua
+ ### Danh sách các sản phẩm của khách hàng đặt mua
   <p align="center">
  <img src="imageReview/ListBuy.PNG" height = "520" width="300">
  </p>
- ## Màn hình xác nhận thông tin khách hàng mua hàng
+ ### Màn hình xác nhận thông tin khách hàng mua hàng
    <p align="center">
  <img src="imageReview/customer.PNG" height = "520" width="300">
  </p>
