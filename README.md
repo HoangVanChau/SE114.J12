@@ -27,7 +27,7 @@
   - Danh sách các sản phẩm của khách hàng đặt mua
   - Màn hình xác nhận thông tin khách hàng mua hàng
  ## MÔI TRƯỜNG CÀI ĐẶT
- 
+ - Hệ điều hành Android 6.0
  
  ## GIAO DIỆN CỦA ỨNG DỤNG  
  ### Đăng nhập / Đăng kí
@@ -65,6 +65,11 @@
  <img src="imageReview/donhang.PNG" height = "279" width="1273">
    <img src="imageReview/chitietdonhang.PNG" height = "282" width="1228">
  </p>
+   ### *MÔ TẢ*
+  - Id trong bảng 'donhang' sẽ được tự động tạo khi khách hàng nhấn button xác nhận để thanh toán đơn hàng
+  - Thông tin của khách hàng sẽ được hệ thống tự động cập nhật lên Server
+  - Thông tin chi tiết các sản phẩm mà khách hàng mua cũng được hệ thống cập nhật lên bảng 'chitietdonmuahang' thông qua khóa của bảng là 'madonhang'.
+  - 'Id' là khóa chính trong bảng 'donhang', 'madonhang' là khóa ngoại trong bảng 'chitietdonmuahang'
  
  
  
