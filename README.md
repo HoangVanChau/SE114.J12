@@ -80,6 +80,7 @@
   - Thông tin của khách hàng sẽ được hệ thống tự động cập nhật lên Server
   - Thông tin chi tiết các sản phẩm mà khách hàng mua cũng được hệ thống cập nhật lên bảng 'chitietdonmuahang' thông qua khóa của bảng là 'madonhang'.
   - 'Id' là khóa chính trong bảng 'donhang', 'madonhang' là khóa ngoại trong bảng 'chitietdonmuahang'
+  - Thông qua 'Id' và 'madonhang' chủ cửa hàng sẽ biết được khách hàng nào đặt sản phẩm nào và đưa đến đúng địa chỉ mà khách hàng đã đặt.
  
  
  
