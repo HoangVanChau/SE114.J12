@@ -62,8 +62,8 @@
  </p>
  ### Danh sách khách hàng đặt mua và chi tiết đơn hàng
  <p align="center">
- <img src="imageReview/donhang.PNG" height = "1273" width="279">
-   <img src="imageReview/chitietdonhang.PNG" height = "1228" width="282">
+ <img src="imageReview/donhang.PNG" height = "279" width="1273">
+   <img src="imageReview/chitietdonhang.PNG" height = "282" width="1228">
  </p>
  
  
