@@ -85,6 +85,7 @@
   ### Tài liệu tham khảo
   - Trung tâm tin học khoa phạm
   - https://www.mkyong.com 
+  - Các nguồn tài liệu tham khảo từ các trang trên web để giúp nhóm có thể hoàn thiện app bán hàng
  
  
  
